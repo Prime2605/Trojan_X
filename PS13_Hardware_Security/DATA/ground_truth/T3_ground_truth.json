@@ -1,0 +1,38 @@
+{
+    "design": "ALU8_T3",
+    "trojan_type": "sequential",
+    "description": "T3: Sequential (state-based) Trojan in 8-bit ALU. Uses a 3-stage finite state machine that must observe a specific sequence of operations to trigger.",
+    "taxonomy": "Digital, sequentially triggered, state-based Hardware Trojan",
+
+    "trigger": {
+        "type": "sequential",
+        "condition": "3-cycle sequence: 1) OP=010 (AND) with A==B; 2) OP=100 (XOR) with A==~B; 3) OP=000 (ADD) with A[7]==1",
+        "readable": "State machine transitions 00 -> 01 -> 10 -> 11 upon seeing the sequence. Latches at 11.",
+        "signals": ["A[7:0]", "B[7:0]", "OP[2:0]", "clk", "rst_n"],
+        "sequential_elements": ["state[1:0] (2 Flip-Flops)"],
+        "activation_examples": [
+            {"sequence": ["A=0x12 B=0x12 OP=AND", "A=0xFF B=0x00 OP=XOR", "A=0x80 B=0x01 OP=ADD"], "triggers": true}
+        ],
+        "note": "Requires identifying sequential elements (FFs) and clock connectivity."
+    },
+
+    "payload": {
+        "type": "flag_corruption",
+        "action": "Invert zero and carry flags permanently once triggered.",
+        "affected_outputs": ["carry", "zero"],
+        "unaffected_outputs": ["Y[7:0]", "overflow"],
+        "note": "Payload is latched on until reset."
+    },
+
+    "structural_hints": {
+        "expected_trigger_structure": "State machine with 2 FFs (e.g., FDRE/FDCE). Combinational logic feeding D-inputs based on current state and ALU inputs.",
+        "expected_payload_structure": "XOR gates on the carry and zero output paths, driven by the state==11 signal."
+    },
+
+    "ground_truth_cells": {
+        "note": "Populated AFTER synthesis.",
+        "trojan_trigger_cells": [],
+        "trojan_payload_cells": [],
+        "trojan_nets": []
+    }
+}

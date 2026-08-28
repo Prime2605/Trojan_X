@@ -1,0 +1,39 @@
+{
+    "design": "ALU8_T2",
+    "trojan_type": "complex_combinational",
+    "description": "T2: Complex combinational Trojan in 8-bit ALU. Uses a wider and deeper logic cone for its trigger, involving multi-stage conditions from operands, opcode, and internal carry.",
+    "taxonomy": "Digital, combinationally triggered, complex-condition Hardware Trojan",
+
+    "trigger": {
+        "type": "combinational",
+        "condition": "(A[3:0] == 4'hA) & (B[3:0] == 4'h5) & (OP == 3'b000) & alu_carry & A[7] & ~B[7]",
+        "readable": "A[3:0]==0xA AND B[3:0]==0x5 AND OP==ADD AND results in carry out AND A[7]==1 AND B[7]==0",
+        "signals": ["A[7]", "A[3]", "A[2]", "A[1]", "A[0]", "B[7]", "B[3]", "B[2]", "B[1]", "B[0]", "OP[2:0]", "alu_carry"],
+        "activation_examples": [
+            {"A": "0xEA", "B": "0x75", "OP": "000 (ADD)", "triggers": true},
+            {"A": "0x8A", "B": "0x05", "OP": "000 (ADD)", "triggers": false}
+        ],
+        "note": "Trigger logic is deeper than T1, involving a chain of LUTs and evaluating an intermediate computed signal (alu_carry)."
+    },
+
+    "payload": {
+        "type": "data_corruption",
+        "action": "Force Y to 0xFF, force overflow to 1",
+        "affected_outputs": ["Y[7:0]", "overflow"],
+        "unaffected_outputs": ["carry"],
+        "affected_flags": ["zero (recalculated based on modified Y)"],
+        "note": "A larger payload affecting multiple output bits."
+    },
+
+    "structural_hints": {
+        "expected_trigger_structure": "Multi-level LUT chain converging on t2_trigger. Paths from A, B, OP, and internal carry logic.",
+        "expected_payload_structure": "MUXes or override logic on all Y bits and the overflow bit."
+    },
+
+    "ground_truth_cells": {
+        "note": "Populated AFTER synthesis.",
+        "trojan_trigger_cells": [],
+        "trojan_payload_cells": [],
+        "trojan_nets": []
+    }
+}

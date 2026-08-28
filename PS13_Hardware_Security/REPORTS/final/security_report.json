@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "design": "ALU8",
+    "generated_at": "2026-08-28T17:26:27.309480",
+    "framework": "PS13 Hardware Security Analyzer",
+    "version": "0.1.0"
+  },
+  "overall_verdict": {
+    "verdict": "CLEAN \u2014 no anomalies detected",
+    "risk_level": "NONE"
+  },
+  "structural_summary": {
+    "total_cells": 167,
+    "total_edges": 187,
+    "max_logic_depth": 5,
+    "cell_type_distribution": {
+      "OBUF": 32,
+      "LUT2": 22,
+      "IBUF": 23,
+      "BUFG": 1,
+      "GND": 1,
+      "VCC": 1,
+      "LUT1": 2,
+      "FDCE": 20,
+      "CARRY4": 11,
+      "trojan_alu8": 1,
+      "LUT6": 29,
+      "LUT3": 5,
+      "LUT5": 10,
+      "LUT4": 9
+    }
+  },
+  "trojan_summary": {
+    "suspicious_cells_found": 0,
+    "top_suspects": [],
+    "trojan_type_estimates": [],
+    "affected_outputs": []
+  },
+  "timing_summary": null,
+  "confidence": {
+    "structural": "available",
+    "trojan_detection": "available",
+    "timing_sca": "not_run"
+  },
+  "recommendations": [
+    "Design appears clean \u2014 no immediate action required",
+    "Consider periodic re-analysis if design evolves"
+  ]
+}

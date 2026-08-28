@@ -1,0 +1,62 @@
+{
+    "design": "ALU8_T1",
+    "trojan_type": "rare_combination_combinational",
+    "description": "T1: Rare-combination combinational Trojan in 8-bit ALU. Uses bit-level signals from legitimate ALU inputs (A, B, OP) as trigger — not arbitrary magic constants.",
+    "taxonomy": "Digital, combinationally triggered, rare-condition Hardware Trojan (Trust-Hub classification)",
+
+    "trigger": {
+        "type": "combinational",
+        "condition": "A[7] & A[6] & ~A[5] & B[7] & ~B[6] & B[5] & OP[2]",
+        "readable": "A[7:5] == 3'b110 AND B[7:5] == 3'b101 AND OP[2] == 1",
+        "signals": ["A[7]", "A[6]", "A[5]", "B[7]", "B[6]", "B[5]", "OP[2]"],
+        "signal_count": 7,
+        "probability": "1/128 for uniformly random inputs",
+        "activation_examples": [
+            {"A": "0xC0", "B": "0xA0", "OP": "100 (XOR)", "triggers": true},
+            {"A": "0xDF", "B": "0xBF", "OP": "110 (INC)", "triggers": true},
+            {"A": "0xC0", "B": "0xA0", "OP": "000 (ADD)", "triggers": false},
+            {"A": "0xE0", "B": "0xA0", "OP": "100 (XOR)", "triggers": false}
+        ],
+        "note": "All 7 input bits must match simultaneously. Trigger uses only legitimate ALU signals — no hidden inputs."
+    },
+
+    "payload": {
+        "type": "data_corruption",
+        "action": "XOR-flip bit [3] of ALU result (single-bit corruption)",
+        "affected_outputs": ["Y[3]"],
+        "unaffected_outputs": ["Y[7:4]", "Y[2:0]", "carry", "overflow"],
+        "affected_flags": ["zero (recalculated based on modified Y)"],
+        "note": "Deliberately small payload — single bit — so the analyzer can isolate trigger vs payload structures."
+    },
+
+    "structural_hints": {
+        "expected_trigger_structure": "AND-tree of 7 signals → LUT chain → t1_trigger wire",
+        "expected_payload_structure": "MUX or XOR on Y[3] output path, gated by t1_trigger",
+        "expected_extra_cells": "1-2 LUTs for trigger AND-tree + 1 LUT/MUX for payload",
+        "expected_extra_nets": "t1_trigger net + modified Y[3] path",
+        "affected_logic_cone": "Y[3] has additional fan-in from A[7:5], B[7:5], OP[2]",
+        "note": "Post-synthesis: trigger AND-tree may be absorbed into existing LUTs or split across multiple. Exact cell names depend on Vivado optimization."
+    },
+
+    "ground_truth_cells": {
+        "note": "Populated AFTER synthesis — exact cell names come from the synthesized netlist, not from assumptions.",
+        "trojan_trigger_cells": [],
+        "trojan_payload_cells": [],
+        "trojan_nets": []
+    },
+
+    "benchmark_context": {
+        "progression": "T1 → T2 → T3",
+        "t1_purpose": "Prove the pipeline — establish the complete analyzer flow from netlist → detection → analysis",
+        "t2_purpose": "Prove robustness — more complex combinational trigger with wider/deeper cone (NOT YET IMPLEMENTED)",
+        "t3_purpose": "Prove sequential capability — FFs, state, clock paths (NOT YET IMPLEMENTED)",
+        "sca_note": "SCA/timing is a parallel analysis dimension applied to all three, NOT a fourth Trojan"
+    },
+
+    "metadata": {
+        "created": "2026-08-28",
+        "status": "pre-synthesis",
+        "hidden_from_analyzer": true,
+        "used_only_for_verification": true
+    }
+}

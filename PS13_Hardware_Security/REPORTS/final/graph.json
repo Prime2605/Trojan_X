@@ -1,0 +1,1911 @@
+{
+  "summary": {
+    "total_nodes": 188,
+    "total_edges": 187,
+    "cell_count": 167,
+    "port_count": 21,
+    "max_logic_depth": 5,
+    "connected_components": 100,
+    "is_dag": true
+  },
+  "nodes": [
+    {
+      "id": "PORT_CLK100MHZ",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_CPU_RESETN",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_SW",
+      "node_type": "port",
+      "direction": "input",
+      "width": 16
+    },
+    {
+      "id": "PORT_BTNU",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTNL",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTNR",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTNC",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTND",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_LED",
+      "node_type": "port",
+      "direction": "output",
+      "width": 16
+    },
+    {
+      "id": "PORT_SEG",
+      "node_type": "port",
+      "direction": "output",
+      "width": 7
+    },
+    {
+      "id": "PORT_DP",
+      "node_type": "port",
+      "direction": "output",
+      "width": 1
+    },
+    {
+      "id": "PORT_AN",
+      "node_type": "port",
+      "direction": "output",
+      "width": 8
+    },
+    {
+      "id": "PORT_LED_OBUF",
+      "node_type": "port",
+      "direction": "output",
+      "width": 11
+    },
+    {
+      "id": "PORT_SEG_OBUF",
+      "node_type": "port",
+      "direction": "output",
+      "width": 7
+    },
+    {
+      "id": "PORT_SW_IBUF",
+      "node_type": "port",
+      "direction": "input",
+      "width": 16
+    },
+    {
+      "id": "PORT_BTNR_IBUF",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTNL_IBUF",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTNU_IBUF",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_digit_select",
+      "node_type": "port",
+      "direction": "input",
+      "width": 2
+    },
+    {
+      "id": "PORT_BTND_IBUF",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "PORT_BTNC_IBUF",
+      "node_type": "port",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "id": "\\AN_OBUF[0]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[0]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\AN_OBUF[1]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[1]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\AN_OBUF[2]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[2]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\AN_OBUF[3]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[4]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[5]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[6]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\AN_OBUF[7]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "BTNC_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "BTND_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "BTNL_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "BTNR_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "BTNU_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "CLK100MHZ_IBUF_BUFG_inst",
+      "node_type": "cell",
+      "cell_type": "BUFG"
+    },
+    {
+      "id": "CLK100MHZ_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "CPU_RESETN_IBUF_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "DP_OBUF_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "GND",
+      "node_type": "cell",
+      "cell_type": "GND"
+    },
+    {
+      "id": "\\LED_OBUF[0]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[10]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[11]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[12]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[13]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[14]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[1]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[2]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[4]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[5]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[8]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\LED_OBUF[9]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[0]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[1]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[2]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[3]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[4]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[5]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SEG_OBUF[6]_inst",
+      "node_type": "cell",
+      "cell_type": "OBUF"
+    },
+    {
+      "id": "\\SW_IBUF[0]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[10]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[11]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[12]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[13]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[14]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[15]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[1]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[2]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[3]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[4]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[5]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[6]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[7]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[8]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "\\SW_IBUF[9]_inst",
+      "node_type": "cell",
+      "cell_type": "IBUF"
+    },
+    {
+      "id": "VCC",
+      "node_type": "cell",
+      "cell_type": "VCC"
+    },
+    {
+      "id": "\\refresh_counter[0]_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT1"
+    },
+    {
+      "id": "\\refresh_counter[0]_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT1"
+    },
+    {
+      "id": "\\refresh_counter_reg[0]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[0]_i_1",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\refresh_counter_reg[10]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[11]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[12]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[12]_i_1",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\refresh_counter_reg[13]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[14]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[15]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[16]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[16]_i_1",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\refresh_counter_reg[17]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[18]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[19]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[1]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[2]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[3]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[4]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[4]_i_1",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\refresh_counter_reg[5]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[6]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[7]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[8]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "\\refresh_counter_reg[8]_i_1",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\refresh_counter_reg[9]",
+      "node_type": "cell",
+      "cell_type": "FDCE"
+    },
+    {
+      "id": "u_alu",
+      "node_type": "cell",
+      "cell_type": "trojan_alu8"
+    },
+    {
+      "id": "\\LED_OBUF[0]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[0]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[0]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[13]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT3"
+    },
+    {
+      "id": "\\LED_OBUF[13]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[13]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[13]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\LED_OBUF[13]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\LED_OBUF[14]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT3"
+    },
+    {
+      "id": "\\LED_OBUF[14]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "LUT3"
+    },
+    {
+      "id": "\\LED_OBUF[15]_inst_i_6",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[1]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[1]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[1]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[2]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[2]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[2]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[2]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_6",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_7",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_8",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[3]_inst_i_9",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[4]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[4]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT3"
+    },
+    {
+      "id": "\\LED_OBUF[4]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[4]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[4]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[5]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[5]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\LED_OBUF[5]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[5]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[5]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[6]_inst_i_6",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT6"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "LUT3"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_6",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_7",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_8",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\LED_OBUF[7]_inst_i_9",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "\\SEG_OBUF[0]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[1]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[2]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[3]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[4]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[5]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[6]_inst_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[6]_inst_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\SEG_OBUF[6]_inst_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\SEG_OBUF[6]_inst_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT4"
+    },
+    {
+      "id": "\\SEG_OBUF[6]_inst_i_5",
+      "node_type": "cell",
+      "cell_type": "LUT5"
+    },
+    {
+      "id": "\\alu_y0_inferred__5/i__carry",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "\\alu_y0_inferred__5/i__carry__0",
+      "node_type": "cell",
+      "cell_type": "CARRY4"
+    },
+    {
+      "id": "i__carry__0_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry__0_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry__0_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry__0_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry_i_1",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry_i_2",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry_i_3",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    },
+    {
+      "id": "i__carry_i_4",
+      "node_type": "cell",
+      "cell_type": "LUT2"
+    }
+  ],
+  "edges": [
+    {
+      "source": "PORT_CLK100MHZ",
+      "target": "CLK100MHZ_IBUF_inst",
+      "net": "CLK100MHZ"
+    },
+    {
+      "source": "PORT_CPU_RESETN",
+      "target": "CPU_RESETN_IBUF_inst",
+      "net": "CPU_RESETN"
+    },
+    {
+      "source": "PORT_BTNU",
+      "target": "BTNU_IBUF_inst",
+      "net": "BTNU"
+    },
+    {
+      "source": "PORT_BTNL",
+      "target": "BTNL_IBUF_inst",
+      "net": "BTNL"
+    },
+    {
+      "source": "PORT_BTNR",
+      "target": "BTNR_IBUF_inst",
+      "net": "BTNR"
+    },
+    {
+      "source": "PORT_BTNC",
+      "target": "BTNC_IBUF_inst",
+      "net": "BTNC"
+    },
+    {
+      "source": "PORT_BTND",
+      "target": "BTND_IBUF_inst",
+      "net": "BTND"
+    },
+    {
+      "source": "PORT_SW_IBUF",
+      "target": "u_alu",
+      "net": "SW_IBUF"
+    },
+    {
+      "source": "PORT_digit_select",
+      "target": "u_alu",
+      "net": "digit_select"
+    },
+    {
+      "source": "BTNC_IBUF_inst",
+      "target": "u_alu",
+      "net": "BTNC_IBUF"
+    },
+    {
+      "source": "BTNC_IBUF_inst",
+      "target": "\\LED_OBUF[13]_inst_i_1",
+      "net": "BTNC_IBUF"
+    },
+    {
+      "source": "BTNC_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_1",
+      "net": "BTNC_IBUF"
+    },
+    {
+      "source": "BTNC_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_2",
+      "net": "BTNC_IBUF"
+    },
+    {
+      "source": "BTNC_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_2",
+      "net": "BTNC_IBUF"
+    },
+    {
+      "source": "BTNC_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_1",
+      "net": "BTNC_IBUF"
+    },
+    {
+      "source": "BTND_IBUF_inst",
+      "target": "u_alu",
+      "net": "BTND_IBUF"
+    },
+    {
+      "source": "BTND_IBUF_inst",
+      "target": "\\LED_OBUF[13]_inst_i_1",
+      "net": "BTND_IBUF"
+    },
+    {
+      "source": "BTND_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_1",
+      "net": "BTND_IBUF"
+    },
+    {
+      "source": "BTND_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_2",
+      "net": "BTND_IBUF"
+    },
+    {
+      "source": "BTND_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_2",
+      "net": "BTND_IBUF"
+    },
+    {
+      "source": "BTND_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_1",
+      "net": "BTND_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "u_alu",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[0]_inst_i_1",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[0]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[13]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_4",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_4",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_4",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_1",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_4",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_5",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_4",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_4",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_5",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_3",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNL_IBUF_inst",
+      "target": "\\SEG_OBUF[6]_inst_i_2",
+      "net": "BTNL_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "u_alu",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[0]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[0]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[13]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[13]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_1",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_6",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_4",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_4",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_4",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_5",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_4",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_5",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_4",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_5",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_2",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNR_IBUF_inst",
+      "target": "\\SEG_OBUF[6]_inst_i_3",
+      "net": "BTNR_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "u_alu",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[0]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[13]_inst_i_2",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_2",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[15]_inst_i_4",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[1]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_2",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[2]_inst_i_3",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[3]_inst_i_3",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[4]_inst_i_4",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_2",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[5]_inst_i_3",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_3",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[6]_inst_i_4",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\LED_OBUF[7]_inst_i_1",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "BTNU_IBUF_inst",
+      "target": "\\SEG_OBUF[6]_inst_i_5",
+      "net": "BTNU_IBUF"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[0]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[10]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[11]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[12]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[13]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[14]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[15]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[16]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[17]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[18]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[19]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[1]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[2]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[3]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[4]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[5]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[6]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[7]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[8]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_BUFG_inst",
+      "target": "\\refresh_counter_reg[9]",
+      "net": "CLK100MHZ_IBUF_BUFG"
+    },
+    {
+      "source": "CLK100MHZ_IBUF_inst",
+      "target": "CLK100MHZ_IBUF_BUFG_inst",
+      "net": "CLK100MHZ_IBUF"
+    },
+    {
+      "source": "CPU_RESETN_IBUF_inst",
+      "target": "\\refresh_counter[0]_i_2",
+      "net": "CPU_RESETN_IBUF"
+    },
+    {
+      "source": "DP_OBUF_inst",
+      "target": "PORT_DP",
+      "net": "DP"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[0]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[10]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[11]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[12]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[13]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[14]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[15]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[16]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[17]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[18]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[19]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[1]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[2]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[3]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[4]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[5]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[6]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[7]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[8]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter[0]_i_2",
+      "target": "\\refresh_counter_reg[9]",
+      "net": "\\refresh_counter[0]_i_2_n_0"
+    },
+    {
+      "source": "\\refresh_counter_reg[0]",
+      "target": "\\refresh_counter[0]_i_3",
+      "net": "\\refresh_counter_reg_n_0_[0]"
+    },
+    {
+      "source": "\\LED_OBUF[0]_inst_i_2",
+      "target": "\\LED_OBUF[0]_inst_i_1",
+      "net": "\\LED_OBUF[0]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[0]_inst_i_3",
+      "target": "\\LED_OBUF[0]_inst_i_1",
+      "net": "\\LED_OBUF[0]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[13]_inst_i_2",
+      "target": "\\LED_OBUF[13]_inst_i_1",
+      "net": "alu_carry__4"
+    },
+    {
+      "source": "\\LED_OBUF[13]_inst_i_3",
+      "target": "\\LED_OBUF[13]_inst_i_2",
+      "net": "\\LED_OBUF[13]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[13]_inst_i_4",
+      "target": "\\LED_OBUF[13]_inst_i_2",
+      "net": "data0"
+    },
+    {
+      "source": "\\LED_OBUF[13]_inst_i_5",
+      "target": "\\LED_OBUF[13]_inst_i_2",
+      "net": "\\LED_OBUF[13]_inst_i_5_n_3"
+    },
+    {
+      "source": "\\LED_OBUF[14]_inst_i_2",
+      "target": "\\LED_OBUF[14]_inst_i_1",
+      "net": "\\LED_OBUF[14]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_2",
+      "target": "\\LED_OBUF[15]_inst_i_1",
+      "net": "\\LED_OBUF[15]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_3",
+      "target": "\\LED_OBUF[13]_inst_i_3",
+      "net": "\\LED_OBUF[15]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_3",
+      "target": "\\LED_OBUF[15]_inst_i_1",
+      "net": "\\LED_OBUF[15]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_3",
+      "target": "\\LED_OBUF[6]_inst_i_3",
+      "net": "\\LED_OBUF[15]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_3",
+      "target": "\\LED_OBUF[7]_inst_i_5",
+      "net": "\\LED_OBUF[15]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_4",
+      "target": "\\LED_OBUF[13]_inst_i_3",
+      "net": "\\LED_OBUF[15]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_4",
+      "target": "\\LED_OBUF[15]_inst_i_1",
+      "net": "\\LED_OBUF[15]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_4",
+      "target": "\\LED_OBUF[3]_inst_i_2",
+      "net": "\\LED_OBUF[15]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_5",
+      "target": "\\LED_OBUF[15]_inst_i_2",
+      "net": "\\LED_OBUF[15]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_5",
+      "target": "\\LED_OBUF[7]_inst_i_3",
+      "net": "\\LED_OBUF[15]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[15]_inst_i_6",
+      "target": "\\LED_OBUF[15]_inst_i_2",
+      "net": "\\LED_OBUF[15]_inst_i_6_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[1]_inst_i_2",
+      "target": "\\LED_OBUF[1]_inst_i_1",
+      "net": "\\LED_OBUF[1]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[1]_inst_i_3",
+      "target": "\\LED_OBUF[1]_inst_i_1",
+      "net": "\\LED_OBUF[1]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[2]_inst_i_2",
+      "target": "\\LED_OBUF[2]_inst_i_1",
+      "net": "\\LED_OBUF[2]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[2]_inst_i_3",
+      "target": "\\LED_OBUF[2]_inst_i_1",
+      "net": "\\LED_OBUF[2]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[2]_inst_i_4",
+      "target": "\\LED_OBUF[2]_inst_i_1",
+      "net": "\\LED_OBUF[2]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[3]_inst_i_2",
+      "target": "\\LED_OBUF[3]_inst_i_1",
+      "net": "\\LED_OBUF[3]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[3]_inst_i_3",
+      "target": "\\LED_OBUF[3]_inst_i_1",
+      "net": "\\LED_OBUF[3]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[3]_inst_i_4",
+      "target": "\\LED_OBUF[3]_inst_i_1",
+      "net": "\\LED_OBUF[3]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_2",
+      "target": "\\LED_OBUF[4]_inst_i_1",
+      "net": "\\LED_OBUF[4]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_3",
+      "target": "\\LED_OBUF[4]_inst_i_1",
+      "net": "\\LED_OBUF[4]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_4",
+      "target": "\\LED_OBUF[4]_inst_i_1",
+      "net": "\\LED_OBUF[4]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_5",
+      "target": "\\LED_OBUF[4]_inst_i_1",
+      "net": "\\LED_OBUF[4]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[5]_inst_i_2",
+      "target": "\\LED_OBUF[5]_inst_i_1",
+      "net": "\\LED_OBUF[5]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[5]_inst_i_3",
+      "target": "\\LED_OBUF[5]_inst_i_1",
+      "net": "\\LED_OBUF[5]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[5]_inst_i_4",
+      "target": "\\LED_OBUF[5]_inst_i_1",
+      "net": "\\LED_OBUF[5]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[5]_inst_i_5",
+      "target": "\\LED_OBUF[5]_inst_i_2",
+      "net": "\\LED_OBUF[5]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_2",
+      "target": "\\LED_OBUF[0]_inst_i_1",
+      "net": "t1_trigger__0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_2",
+      "target": "\\LED_OBUF[2]_inst_i_1",
+      "net": "t1_trigger__0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_2",
+      "target": "\\LED_OBUF[3]_inst_i_1",
+      "net": "t1_trigger__0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_2",
+      "target": "\\LED_OBUF[5]_inst_i_1",
+      "net": "t1_trigger__0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_2",
+      "target": "\\LED_OBUF[6]_inst_i_1",
+      "net": "t1_trigger__0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_3",
+      "target": "\\LED_OBUF[6]_inst_i_1",
+      "net": "\\LED_OBUF[6]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_4",
+      "target": "\\LED_OBUF[6]_inst_i_1",
+      "net": "\\LED_OBUF[6]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_5",
+      "target": "\\LED_OBUF[6]_inst_i_1",
+      "net": "\\LED_OBUF[6]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_6",
+      "target": "\\LED_OBUF[13]_inst_i_3",
+      "net": "\\LED_OBUF[6]_inst_i_6_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_6",
+      "target": "\\LED_OBUF[15]_inst_i_5",
+      "net": "\\LED_OBUF[6]_inst_i_6_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_6",
+      "target": "\\LED_OBUF[6]_inst_i_3",
+      "net": "\\LED_OBUF[6]_inst_i_6_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[7]_inst_i_2",
+      "target": "\\LED_OBUF[7]_inst_i_1",
+      "net": "\\LED_OBUF[7]_inst_i_2_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[7]_inst_i_3",
+      "target": "\\LED_OBUF[7]_inst_i_1",
+      "net": "\\LED_OBUF[7]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[7]_inst_i_5",
+      "target": "\\LED_OBUF[7]_inst_i_3",
+      "net": "\\LED_OBUF[7]_inst_i_5_n_0"
+    }
+  ]
+}

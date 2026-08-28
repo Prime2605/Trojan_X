@@ -1,0 +1,1713 @@
+{
+  "cell_features": {
+    "\\AN_OBUF[0]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[0]_inst_i_1": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[1]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[1]_inst_i_1": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[2]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[2]_inst_i_1": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[3]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[4]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[5]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[6]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\AN_OBUF[7]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "BTNC_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 6,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 12,
+      "predecessor_count": 1,
+      "successor_count": 6
+    },
+    "BTND_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 6,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 12,
+      "predecessor_count": 1,
+      "successor_count": 6
+    },
+    "BTNL_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 25,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 35,
+      "predecessor_count": 1,
+      "successor_count": 25
+    },
+    "BTNR_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 28,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 38,
+      "predecessor_count": 1,
+      "successor_count": 28
+    },
+    "BTNU_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 21,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 25,
+      "predecessor_count": 1,
+      "successor_count": 21
+    },
+    "CLK100MHZ_IBUF_BUFG_inst": {
+      "cell_type": "BUFG",
+      "fan_in": 1,
+      "fan_out": 20,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 21,
+      "predecessor_count": 1,
+      "successor_count": 20
+    },
+    "CLK100MHZ_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 22,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "CPU_RESETN_IBUF_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 22,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "DP_OBUF_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 1,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 1,
+      "predecessor_count": 0,
+      "successor_count": 1
+    },
+    "GND": {
+      "cell_type": "GND",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[0]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[10]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[11]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[12]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[13]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[14]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[15]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[1]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[2]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[3]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[4]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[5]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[6]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[7]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[8]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[9]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[0]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[1]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[2]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[3]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[4]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[5]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[6]_inst": {
+      "cell_type": "OBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[0]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[10]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[11]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[12]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[13]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[14]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[15]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[1]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[2]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[3]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[4]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[5]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[6]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[7]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[8]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SW_IBUF[9]_inst": {
+      "cell_type": "IBUF",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "VCC": {
+      "cell_type": "VCC",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\refresh_counter[0]_i_2": {
+      "cell_type": "LUT1",
+      "fan_in": 1,
+      "fan_out": 20,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 21,
+      "predecessor_count": 1,
+      "successor_count": 20
+    },
+    "\\refresh_counter[0]_i_3": {
+      "cell_type": "LUT1",
+      "fan_in": 1,
+      "fan_out": 0,
+      "logic_depth": 4,
+      "logic_cone_size": 7,
+      "influence_cone_size": 0,
+      "predecessor_count": 1,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[0]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\refresh_counter_reg[0]_i_1": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[10]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[11]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[12]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[12]_i_1": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[13]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[14]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[15]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[16]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[16]_i_1": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[17]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[18]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[19]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[1]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[2]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[3]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[4]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[4]_i_1": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[5]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[6]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[7]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[8]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[8]_i_1": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\refresh_counter_reg[9]": {
+      "cell_type": "FDCE",
+      "fan_in": 2,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 6,
+      "influence_cone_size": 0,
+      "predecessor_count": 2,
+      "successor_count": 0
+    },
+    "u_alu": {
+      "cell_type": "trojan_alu8",
+      "fan_in": 7,
+      "fan_out": 0,
+      "logic_depth": 2,
+      "logic_cone_size": 12,
+      "influence_cone_size": 0,
+      "predecessor_count": 7,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[0]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 13,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[0]_inst_i_2": {
+      "cell_type": "LUT2",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 1,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[0]_inst_i_3": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[13]_inst_i_1": {
+      "cell_type": "LUT3",
+      "fan_in": 3,
+      "fan_out": 0,
+      "logic_depth": 5,
+      "logic_cone_size": 17,
+      "influence_cone_size": 0,
+      "predecessor_count": 3,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[13]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 6,
+      "fan_out": 1,
+      "logic_depth": 4,
+      "logic_cone_size": 12,
+      "influence_cone_size": 1,
+      "predecessor_count": 6,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[13]_inst_i_3": {
+      "cell_type": "LUT6",
+      "fan_in": 4,
+      "fan_out": 1,
+      "logic_depth": 3,
+      "logic_cone_size": 9,
+      "influence_cone_size": 2,
+      "predecessor_count": 4,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[13]_inst_i_4": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 1,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 2,
+      "predecessor_count": 0,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[13]_inst_i_5": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 1,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 2,
+      "predecessor_count": 0,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[14]_inst_i_1": {
+      "cell_type": "LUT3",
+      "fan_in": 1,
+      "fan_out": 0,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 0,
+      "predecessor_count": 1,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[14]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 0,
+      "fan_out": 1,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 1,
+      "predecessor_count": 0,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[15]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 4,
+      "fan_out": 0,
+      "logic_depth": 4,
+      "logic_cone_size": 12,
+      "influence_cone_size": 0,
+      "predecessor_count": 4,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[15]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 1,
+      "logic_depth": 3,
+      "logic_cone_size": 9,
+      "influence_cone_size": 1,
+      "predecessor_count": 5,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[15]_inst_i_3": {
+      "cell_type": "LUT6",
+      "fan_in": 0,
+      "fan_out": 4,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 9,
+      "predecessor_count": 0,
+      "successor_count": 4
+    },
+    "\\LED_OBUF[15]_inst_i_4": {
+      "cell_type": "LUT2",
+      "fan_in": 2,
+      "fan_out": 3,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 6,
+      "predecessor_count": 2,
+      "successor_count": 3
+    },
+    "\\LED_OBUF[15]_inst_i_5": {
+      "cell_type": "LUT3",
+      "fan_in": 1,
+      "fan_out": 2,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 4,
+      "predecessor_count": 1,
+      "successor_count": 2
+    },
+    "\\LED_OBUF[15]_inst_i_6": {
+      "cell_type": "LUT5",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 2,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[1]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 12,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[1]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[1]_inst_i_3": {
+      "cell_type": "LUT5",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[2]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 14,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[2]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[2]_inst_i_3": {
+      "cell_type": "LUT5",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[2]_inst_i_4": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[3]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 4,
+      "logic_cone_size": 15,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[3]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 3,
+      "logic_cone_size": 7,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[3]_inst_i_3": {
+      "cell_type": "LUT5",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[3]_inst_i_4": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[3]_inst_i_5": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[3]_inst_i_6": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[3]_inst_i_7": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[3]_inst_i_8": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[3]_inst_i_9": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[4]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 6,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 14,
+      "influence_cone_size": 0,
+      "predecessor_count": 6,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[4]_inst_i_2": {
+      "cell_type": "LUT3",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[4]_inst_i_3": {
+      "cell_type": "LUT6",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 1,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[4]_inst_i_4": {
+      "cell_type": "LUT5",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[4]_inst_i_5": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[5]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 4,
+      "logic_cone_size": 15,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[5]_inst_i_2": {
+      "cell_type": "LUT4",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 3,
+      "logic_cone_size": 7,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[5]_inst_i_3": {
+      "cell_type": "LUT5",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[5]_inst_i_4": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[5]_inst_i_5": {
+      "cell_type": "LUT6",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 2,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[6]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 16,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[6]_inst_i_2": {
+      "cell_type": "LUT2",
+      "fan_in": 2,
+      "fan_out": 5,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 5,
+      "predecessor_count": 2,
+      "successor_count": 5
+    },
+    "\\LED_OBUF[6]_inst_i_3": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 8,
+      "influence_cone_size": 1,
+      "predecessor_count": 5,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[6]_inst_i_4": {
+      "cell_type": "LUT5",
+      "fan_in": 3,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 6,
+      "influence_cone_size": 1,
+      "predecessor_count": 3,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[6]_inst_i_5": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[6]_inst_i_6": {
+      "cell_type": "LUT6",
+      "fan_in": 0,
+      "fan_out": 3,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 10,
+      "predecessor_count": 0,
+      "successor_count": 3
+    },
+    "\\LED_OBUF[7]_inst_i_1": {
+      "cell_type": "LUT6",
+      "fan_in": 5,
+      "fan_out": 0,
+      "logic_depth": 3,
+      "logic_cone_size": 16,
+      "influence_cone_size": 0,
+      "predecessor_count": 5,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[7]_inst_i_2": {
+      "cell_type": "LUT6",
+      "fan_in": 2,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 4,
+      "influence_cone_size": 1,
+      "predecessor_count": 2,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[7]_inst_i_3": {
+      "cell_type": "LUT6",
+      "fan_in": 4,
+      "fan_out": 1,
+      "logic_depth": 2,
+      "logic_cone_size": 8,
+      "influence_cone_size": 1,
+      "predecessor_count": 4,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[7]_inst_i_4": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[7]_inst_i_5": {
+      "cell_type": "LUT3",
+      "fan_in": 1,
+      "fan_out": 1,
+      "logic_depth": 1,
+      "logic_cone_size": 1,
+      "influence_cone_size": 2,
+      "predecessor_count": 1,
+      "successor_count": 1
+    },
+    "\\LED_OBUF[7]_inst_i_6": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[7]_inst_i_7": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[7]_inst_i_8": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\LED_OBUF[7]_inst_i_9": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[0]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[1]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[2]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[3]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[4]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[5]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[6]_inst_i_1": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[6]_inst_i_2": {
+      "cell_type": "LUT5",
+      "fan_in": 1,
+      "fan_out": 0,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 0,
+      "predecessor_count": 1,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[6]_inst_i_3": {
+      "cell_type": "LUT5",
+      "fan_in": 1,
+      "fan_out": 0,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 0,
+      "predecessor_count": 1,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[6]_inst_i_4": {
+      "cell_type": "LUT4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\SEG_OBUF[6]_inst_i_5": {
+      "cell_type": "LUT5",
+      "fan_in": 1,
+      "fan_out": 0,
+      "logic_depth": 2,
+      "logic_cone_size": 2,
+      "influence_cone_size": 0,
+      "predecessor_count": 1,
+      "successor_count": 0
+    },
+    "\\alu_y0_inferred__5/i__carry": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "\\alu_y0_inferred__5/i__carry__0": {
+      "cell_type": "CARRY4",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry__0_i_1": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry__0_i_2": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry__0_i_3": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry__0_i_4": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry_i_1": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry_i_2": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry_i_3": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    },
+    "i__carry_i_4": {
+      "cell_type": "LUT2",
+      "fan_in": 0,
+      "fan_out": 0,
+      "logic_depth": 0,
+      "logic_cone_size": 0,
+      "influence_cone_size": 0,
+      "predecessor_count": 0,
+      "successor_count": 0
+    }
+  },
+  "design_features": {
+    "total_cells": 167,
+    "total_ports": 21,
+    "total_nodes": 188,
+    "total_edges": 187,
+    "max_logic_depth": 5,
+    "connected_components": 100,
+    "is_dag": true,
+    "cell_type_distribution": {
+      "OBUF": 32,
+      "LUT2": 22,
+      "IBUF": 23,
+      "BUFG": 1,
+      "GND": 1,
+      "VCC": 1,
+      "LUT1": 2,
+      "FDCE": 20,
+      "CARRY4": 11,
+      "trojan_alu8": 1,
+      "LUT6": 29,
+      "LUT3": 5,
+      "LUT5": 10,
+      "LUT4": 9
+    },
+    "fanout_stats": {
+      "mean": 1.066,
+      "median": 0,
+      "stdev": 3.981,
+      "min": 0,
+      "max": 28
+    },
+    "fanin_stats": {
+      "mean": 1.114,
+      "median": 0,
+      "stdev": 1.573,
+      "min": 0,
+      "max": 7
+    }
+  }
+}

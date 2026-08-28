@@ -1,0 +1,52 @@
+# ========================
+# Python
+# ========================
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# ========================
+# Vivado Build Artifacts
+# ========================
+*.dcp
+*.bit
+*.ltx
+*.xpr
+*.vcd
+*.wdb
+*.str
+*.jou
+*.backup.log
+vivado*.log
+vivado*.jou
+.Xil/
+
+# Vivado project build directories
+Trojan_X.cache/
+Trojan_X.hw/
+Trojan_X.ip_user_files/
+Trojan_X.runs/
+Trojan_X.sim/
+Trojan_X.srcs/
+Trojan_X.gen/
+
+# PS13 Vivado project build
+PS13_Hardware_Security/FPGA/Nexys_A7_100T/vivado/ALU8/
+PS13_Hardware_Security/FPGA/Nexys_A7_100T/vivado/.Xil/
+
+# ========================
+# Simulation artifacts
+# ========================
+sim_t1
+sim_t4
+*.out
+
+# ========================
+# OS / IDE
+# ========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

@@ -1,0 +1,5486 @@
+{
+  "source": "/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/alu8_T1_netlist.v",
+  "summary": {
+    "file": "/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/alu8_T1_netlist.v",
+    "module_count": 2,
+    "instance_count": 169,
+    "net_count": 182,
+    "port_count": 21,
+    "cell_types": {
+      "OBUF": 32,
+      "LUT2": 22,
+      "IBUF": 23,
+      "BUFG": 1,
+      "GND": 2,
+      "VCC": 2,
+      "LUT1": 2,
+      "FDCE": 20,
+      "CARRY4": 11,
+      "trojan_alu8": 1,
+      "LUT6": 29,
+      "LUT3": 5,
+      "LUT5": 10,
+      "LUT4": 9
+    }
+  },
+  "modules": {
+    "alu8_top": {
+      "name": "alu8_top",
+      "ports": [
+        {
+          "name": "CLK100MHZ",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "CPU_RESETN",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "SW",
+          "direction": "input",
+          "width": 16
+        },
+        {
+          "name": "BTNU",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTNL",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTNR",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTNC",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTND",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "LED",
+          "direction": "output",
+          "width": 16
+        },
+        {
+          "name": "SEG",
+          "direction": "output",
+          "width": 7
+        },
+        {
+          "name": "DP",
+          "direction": "output",
+          "width": 1
+        },
+        {
+          "name": "AN",
+          "direction": "output",
+          "width": 8
+        }
+      ],
+      "instances": [
+        {
+          "name": "\\AN_OBUF[0]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2efab230>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e381d10>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[0]_inst_i_1",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e380cd0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e280c30>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2810f0>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[1]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eff31d0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eff99d0>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[1]_inst_i_1",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eff9d00>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed29f50>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed29950>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[2]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed357c0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed35d60>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[2]_inst_i_1",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2effd390>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2effd630>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed57d40>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[3]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const1>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ec33050>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[4]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const1>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ec32e10>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[5]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const1>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ef8e8e0>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[6]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const1>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ef8d9c0>"
+          }
+        },
+        {
+          "name": "\\AN_OBUF[7]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const1>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e8885f0>"
+          }
+        },
+        {
+          "name": "BTNC_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "BTNC",
+            "O": "BTNC_IBUF"
+          }
+        },
+        {
+          "name": "BTND_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "BTND",
+            "O": "BTND_IBUF"
+          }
+        },
+        {
+          "name": "BTNL_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "BTNL",
+            "O": "BTNL_IBUF"
+          }
+        },
+        {
+          "name": "BTNR_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "BTNR",
+            "O": "BTNR_IBUF"
+          }
+        },
+        {
+          "name": "BTNU_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "BTNU",
+            "O": "BTNU_IBUF"
+          }
+        },
+        {
+          "name": "CLK100MHZ_IBUF_BUFG_inst",
+          "module": "BUFG",
+          "connections": {
+            "I": "CLK100MHZ_IBUF",
+            "O": "CLK100MHZ_IBUF_BUFG"
+          }
+        },
+        {
+          "name": "CLK100MHZ_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "CLK100MHZ",
+            "O": "CLK100MHZ_IBUF"
+          }
+        },
+        {
+          "name": "CPU_RESETN_IBUF_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "CPU_RESETN",
+            "O": "CPU_RESETN_IBUF"
+          }
+        },
+        {
+          "name": "DP_OBUF_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const1>",
+            "O": "DP"
+          }
+        },
+        {
+          "name": "GND",
+          "module": "GND",
+          "connections": {
+            "G": "\\<const0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[0]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e8898b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2edd8c20>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[10]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ede2c50>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[11]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ede27d0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[12]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2edf2040>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2edf1d30>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecab950>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[14]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9df0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9010>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa090>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa4b0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[1]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecabbf0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca97f0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9550>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa270>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca91f0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca93d0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecabd10>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9070>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecab350>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca92b0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecab6b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa210>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9b50>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8cb0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[8]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa510>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[9]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "\\<const0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8dd0>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[0]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8e90>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8650>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[1]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca96d0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa6f0>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[2]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaadb0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecabf50>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[3]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270050>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270290>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[4]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2701d0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270590>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[5]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2703b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270890>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[6]_inst",
+          "module": "OBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2706b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270b90>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[0]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2709b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270e90>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[10]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270cb0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271190>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[11]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270fb0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271490>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[12]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2712b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271790>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[13]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2715b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271a90>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[14]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2718b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271d90>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[15]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271bb0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272090>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[1]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271eb0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272390>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[2]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2721b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272690>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[3]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2724b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272990>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[4]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2727b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272c90>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[5]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272ab0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272f90>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[6]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272db0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273290>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[7]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2730b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273590>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[8]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2733b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273890>"
+          }
+        },
+        {
+          "name": "\\SW_IBUF[9]_inst",
+          "module": "IBUF",
+          "connections": {
+            "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2736b0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273b90>"
+          }
+        },
+        {
+          "name": "VCC",
+          "module": "VCC",
+          "connections": {
+            "P": "\\<const1>"
+          }
+        },
+        {
+          "name": "\\refresh_counter[0]_i_2",
+          "module": "LUT1",
+          "connections": {
+            "I0": "CPU_RESETN_IBUF",
+            "O": "\\refresh_counter[0]_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\refresh_counter[0]_i_3",
+          "module": "LUT1",
+          "connections": {
+            "I0": "\\refresh_counter_reg_n_0_[0]",
+            "O": "\\refresh_counter[0]_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[0]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[0]_i_1_n_7",
+            "Q": "\\refresh_counter_reg_n_0_[0]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\<const0>",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2efaba10>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2e1d79d0>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2e1d7110>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2e281e00>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[10]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[8]_i_1_n_5",
+            "Q": "\\refresh_counter_reg_n_0_[10]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[11]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[8]_i_1_n_4",
+            "Q": "\\refresh_counter_reg_n_0_[11]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[12]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[12]_i_1_n_7",
+            "Q": "\\refresh_counter_reg_n_0_[12]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\refresh_counter_reg[8]_i_1_n_0",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2e2822c0>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2eff2e70>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2effa360>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2effa470>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[13]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[12]_i_1_n_6",
+            "Q": "\\refresh_counter_reg_n_0_[13]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[14]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[12]_i_1_n_5",
+            "Q": "\\refresh_counter_reg_n_0_[14]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[15]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[12]_i_1_n_4",
+            "Q": "\\refresh_counter_reg_n_0_[15]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[16]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[16]_i_1_n_7",
+            "Q": "\\refresh_counter_reg_n_0_[16]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\refresh_counter_reg[12]_i_1_n_0",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ed2a350>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2ed29550>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed36990>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ed36b70>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[17]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[16]_i_1_n_6",
+            "Q": "\\refresh_counter_reg_n_0_[17]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[18]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[16]_i_1_n_5",
+            "Q": "<pyverilog.vparser.ast.Pointer object at 0x707c2e27c1d0>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[19]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[16]_i_1_n_4",
+            "Q": "<pyverilog.vparser.ast.Pointer object at 0x707c2e27c650>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[1]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[0]_i_1_n_6",
+            "Q": "\\refresh_counter_reg_n_0_[1]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[2]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[0]_i_1_n_5",
+            "Q": "\\refresh_counter_reg_n_0_[2]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[3]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[0]_i_1_n_4",
+            "Q": "\\refresh_counter_reg_n_0_[3]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[4]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[4]_i_1_n_7",
+            "Q": "\\refresh_counter_reg_n_0_[4]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\refresh_counter_reg[0]_i_1_n_0",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2effdb70>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2effdc50>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed57860>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ec32b10>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[5]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[4]_i_1_n_6",
+            "Q": "\\refresh_counter_reg_n_0_[5]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[6]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[4]_i_1_n_5",
+            "Q": "\\refresh_counter_reg_n_0_[6]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[7]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[4]_i_1_n_4",
+            "Q": "\\refresh_counter_reg_n_0_[7]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[8]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[8]_i_1_n_7",
+            "Q": "\\refresh_counter_reg_n_0_[8]"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\refresh_counter_reg[4]_i_1_n_0",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ec32a50>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2ef8f8b0>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ef8d230>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2e889950>"
+          }
+        },
+        {
+          "name": "\\refresh_counter_reg[9]",
+          "module": "FDCE",
+          "connections": {
+            "C": "CLK100MHZ_IBUF_BUFG",
+            "CE": "\\<const1>",
+            "CLR": "\\refresh_counter[0]_i_2_n_0",
+            "D": "\\refresh_counter_reg[8]_i_1_n_6",
+            "Q": "\\refresh_counter_reg_n_0_[9]"
+          }
+        },
+        {
+          "name": "u_alu",
+          "module": "trojan_alu8",
+          "connections": {
+            "BTNC_IBUF": "BTNC_IBUF",
+            "BTND_IBUF": "BTND_IBUF",
+            "BTNL_IBUF": "BTNL_IBUF",
+            "BTNR_IBUF": "BTNR_IBUF",
+            "BTNU_IBUF": "BTNU_IBUF",
+            "LED_OBUF": "<pyverilog.vparser.ast.Concat object at 0x707c2e888870>",
+            "SEG_OBUF": "SEG_OBUF",
+            "SW_IBUF": "SW_IBUF",
+            "digit_select": "digit_select"
+          }
+        }
+      ],
+      "nets": [
+        {
+          "name": "\\<const0>",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\<const1>",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "AN",
+          "type": "wire",
+          "width": 8
+        },
+        {
+          "name": "AN_OBUF",
+          "type": "wire",
+          "width": 3
+        },
+        {
+          "name": "BTNC",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNC_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTND",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTND_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNL",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNL_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNR",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNR_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNU",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNU_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "CLK100MHZ",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "CLK100MHZ_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "CLK100MHZ_IBUF_BUFG",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "CPU_RESETN",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "CPU_RESETN_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "DP",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "LED",
+          "type": "wire",
+          "width": 16
+        },
+        {
+          "name": "LED_OBUF",
+          "type": "wire",
+          "width": 16
+        },
+        {
+          "name": "SEG",
+          "type": "wire",
+          "width": 7
+        },
+        {
+          "name": "SEG_OBUF",
+          "type": "wire",
+          "width": 7
+        },
+        {
+          "name": "SW",
+          "type": "wire",
+          "width": 16
+        },
+        {
+          "name": "SW_IBUF",
+          "type": "wire",
+          "width": 16
+        },
+        {
+          "name": "digit_select",
+          "type": "wire",
+          "width": 2
+        },
+        {
+          "name": "\\refresh_counter[0]_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter[0]_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[0]_i_1_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[12]_i_1_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[16]_i_1_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[4]_i_1_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg[8]_i_1_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[0]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[10]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[11]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[12]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[13]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[14]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[15]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[16]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[17]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[1]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[2]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[3]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[4]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[5]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[6]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[7]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[8]",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\refresh_counter_reg_n_0_[9]",
+          "type": "wire",
+          "width": 1
+        }
+      ],
+      "params": []
+    },
+    "trojan_alu8": {
+      "name": "trojan_alu8",
+      "ports": [
+        {
+          "name": "LED_OBUF",
+          "direction": "output",
+          "width": 11
+        },
+        {
+          "name": "SEG_OBUF",
+          "direction": "output",
+          "width": 7
+        },
+        {
+          "name": "SW_IBUF",
+          "direction": "input",
+          "width": 16
+        },
+        {
+          "name": "BTNR_IBUF",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTNL_IBUF",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTNU_IBUF",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "digit_select",
+          "direction": "input",
+          "width": 2
+        },
+        {
+          "name": "BTND_IBUF",
+          "direction": "input",
+          "width": 1
+        },
+        {
+          "name": "BTNC_IBUF",
+          "direction": "input",
+          "width": 1
+        }
+      ],
+      "instances": [
+        {
+          "name": "GND",
+          "module": "GND",
+          "connections": {
+            "G": "\\<const0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[0]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "t1_trigger__0",
+            "I1": "BTNL_IBUF",
+            "I2": "BTNU_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e26f830>",
+            "I4": "\\LED_OBUF[0]_inst_i_2_n_0",
+            "I5": "\\LED_OBUF[0]_inst_i_3_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e26fb30>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[0]_inst_i_2",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e26fbf0>",
+            "I1": "BTNR_IBUF",
+            "O": "\\LED_OBUF[0]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[0]_inst_i_3",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[3]_inst_i_5_n_7",
+            "I1": "\\alu_y0_inferred__5/i__carry_n_7",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2742f0>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2e274470>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[0]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_1",
+          "module": "LUT3",
+          "connections": {
+            "I0": "BTND_IBUF",
+            "I1": "BTNC_IBUF",
+            "I2": "alu_carry__4",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e274a70>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[13]_inst_i_3_n_0",
+            "I1": "BTNU_IBUF",
+            "I2": "data0",
+            "I3": "BTNR_IBUF",
+            "I4": "BTNL_IBUF",
+            "I5": "\\LED_OBUF[13]_inst_i_5_n_3",
+            "O": "alu_carry__4"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_3",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[15]_inst_i_3_n_0",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e275310>",
+            "I2": "\\LED_OBUF[6]_inst_i_6_n_0",
+            "I3": "BTNR_IBUF",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2e275610>",
+            "I5": "\\LED_OBUF[15]_inst_i_4_n_0",
+            "O": "\\LED_OBUF[13]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_4",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\LED_OBUF[7]_inst_i_4_n_0",
+            "CO": "data0",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2edd8b00>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2e192ed0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_5",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\alu_y0_inferred__5/i__carry__0_n_0",
+            "CO": "\\LED_OBUF[13]_inst_i_5_n_3",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2e192bd0>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2edf3b60>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[14]_inst_i_1",
+          "module": "LUT3",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2763f0>",
+            "I1": "\\LED_OBUF[14]_inst_i_2_n_0",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276810>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276990>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[14]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276a50>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276cf0>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276e70>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276ff0>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2e277170>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2772f0>",
+            "O": "\\LED_OBUF[14]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[15]_inst_i_2_n_0",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2776b0>",
+            "I2": "\\LED_OBUF[15]_inst_i_3_n_0",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2778f0>",
+            "I4": "BTNR_IBUF",
+            "I5": "\\LED_OBUF[15]_inst_i_4_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e277bf0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[15]_inst_i_5_n_0",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e277ef0>",
+            "I2": "BTNR_IBUF",
+            "I3": "\\LED_OBUF[15]_inst_i_6_n_0",
+            "I4": "BTNL_IBUF",
+            "I5": "BTNU_IBUF",
+            "O": "\\LED_OBUF[15]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_3",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4410>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc46b0>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4830>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc49b0>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4b30>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4cb0>",
+            "O": "\\LED_OBUF[15]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_4",
+          "module": "LUT2",
+          "connections": {
+            "I0": "BTNU_IBUF",
+            "I1": "BTNL_IBUF",
+            "O": "\\LED_OBUF[15]_inst_i_4_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_5",
+          "module": "LUT3",
+          "connections": {
+            "I0": "\\LED_OBUF[6]_inst_i_6_n_0",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5310>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5490>",
+            "O": "\\LED_OBUF[15]_inst_i_5_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_6",
+          "module": "LUT5",
+          "connections": {
+            "I0": "p_1_in2_in",
+            "I1": "\\alu_y0_inferred__5/i__carry__0_n_4",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc58b0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5a30>",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[15]_inst_i_6_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[1]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5cd0>",
+            "I1": "BTNC_IBUF",
+            "I2": "BTND_IBUF",
+            "I3": "\\LED_OBUF[1]_inst_i_2_n_0",
+            "I4": "BTNU_IBUF",
+            "I5": "\\LED_OBUF[1]_inst_i_3_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6330>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[1]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[3]_inst_i_5_n_6",
+            "I1": "\\alu_y0_inferred__5/i__carry_n_6",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc67b0>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6930>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[1]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[1]_inst_i_3",
+          "module": "LUT5",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6bd0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6e70>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6ff0>",
+            "I3": "BTNL_IBUF",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[1]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc7350>",
+            "I1": "t1_trigger__0",
+            "I2": "\\LED_OBUF[2]_inst_i_2_n_0",
+            "I3": "\\LED_OBUF[2]_inst_i_3_n_0",
+            "I4": "BTNU_IBUF",
+            "I5": "\\LED_OBUF[2]_inst_i_4_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc79b0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc7d70>",
+            "I3": "BTNR_IBUF",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc7fb0>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecec170>",
+            "O": "\\LED_OBUF[2]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_3",
+          "module": "LUT5",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecec5f0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecec770>",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[2]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_4",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[3]_inst_i_5_n_5",
+            "I1": "\\alu_y0_inferred__5/i__carry_n_5",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ececd10>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecece90>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[2]_inst_i_4_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eced2b0>",
+            "I1": "t1_trigger__0",
+            "I2": "\\LED_OBUF[3]_inst_i_2_n_0",
+            "I3": "\\LED_OBUF[3]_inst_i_3_n_0",
+            "I4": "BTNU_IBUF",
+            "I5": "\\LED_OBUF[3]_inst_i_4_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eced850>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[15]_inst_i_4_n_0",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecedbb0>",
+            "I2": "BTNR_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eceddf0>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecedf70>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecee0f0>",
+            "O": "\\LED_OBUF[3]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_3",
+          "module": "LUT5",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecee5d0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecee750>",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[3]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_4",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[3]_inst_i_5_n_4",
+            "I1": "\\alu_y0_inferred__5/i__carry_n_4",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eceed50>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eceeed0>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[3]_inst_i_4_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\<const0>",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ecbc7c0>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2e1d6c10>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ecef890>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ecefad0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_6",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecefc50>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecefe30>",
+            "O": "\\LED_OBUF[3]_inst_i_6_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_7",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4110>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd42f0>",
+            "O": "\\LED_OBUF[3]_inst_i_7_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_8",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4590>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4770>",
+            "O": "\\LED_OBUF[3]_inst_i_8_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_9",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4a10>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4bf0>",
+            "O": "\\LED_OBUF[3]_inst_i_9_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[4]_inst_i_2_n_0",
+            "I1": "BTNL_IBUF",
+            "I2": "BTNU_IBUF",
+            "I3": "\\LED_OBUF[4]_inst_i_3_n_0",
+            "I4": "\\LED_OBUF[4]_inst_i_4_n_0",
+            "I5": "\\LED_OBUF[4]_inst_i_5_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd53d0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_2",
+          "module": "LUT3",
+          "connections": {
+            "I0": "BTND_IBUF",
+            "I1": "BTNC_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd57f0>",
+            "O": "\\LED_OBUF[4]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_3",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5a90>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5c70>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5df0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5f70>",
+            "I4": "BTNR_IBUF",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd61b0>",
+            "O": "\\LED_OBUF[4]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_4",
+          "module": "LUT5",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6690>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6810>",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[4]_inst_i_4_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_5",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[7]_inst_i_4_n_7",
+            "I1": "\\alu_y0_inferred__5/i__carry__0_n_7",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6e10>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6f90>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[4]_inst_i_5_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd73b0>",
+            "I1": "t1_trigger__0",
+            "I2": "\\LED_OBUF[5]_inst_i_2_n_0",
+            "I3": "\\LED_OBUF[5]_inst_i_3_n_0",
+            "I4": "BTNU_IBUF",
+            "I5": "\\LED_OBUF[5]_inst_i_4_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd7950>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_2",
+          "module": "LUT4",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd7d70>",
+            "I3": "\\LED_OBUF[5]_inst_i_5_n_0",
+            "O": "\\LED_OBUF[5]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_3",
+          "module": "LUT5",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece42f0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece4470>",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[5]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_4",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[7]_inst_i_4_n_6",
+            "I1": "\\alu_y0_inferred__5/i__carry__0_n_6",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece4a70>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece4bf0>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[5]_inst_i_4_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_5",
+          "module": "LUT6",
+          "connections": {
+            "I0": "BTNR_IBUF",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5130>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece52b0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5430>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece55b0>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5730>",
+            "O": "\\LED_OBUF[5]_inst_i_5_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5a30>",
+            "I1": "t1_trigger__0",
+            "I2": "\\LED_OBUF[6]_inst_i_3_n_0",
+            "I3": "\\LED_OBUF[6]_inst_i_4_n_0",
+            "I4": "BTNU_IBUF",
+            "I5": "\\LED_OBUF[6]_inst_i_5_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5fd0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_2",
+          "module": "LUT2",
+          "connections": {
+            "I0": "BTNC_IBUF",
+            "I1": "BTND_IBUF",
+            "O": "t1_trigger__0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_3",
+          "module": "LUT6",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece66f0>",
+            "I3": "\\LED_OBUF[15]_inst_i_3_n_0",
+            "I4": "BTNR_IBUF",
+            "I5": "\\LED_OBUF[6]_inst_i_6_n_0",
+            "O": "\\LED_OBUF[6]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_4",
+          "module": "LUT5",
+          "connections": {
+            "I0": "BTNL_IBUF",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece6e10>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece6f90>",
+            "I4": "BTNR_IBUF",
+            "O": "\\LED_OBUF[6]_inst_i_4_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_5",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[7]_inst_i_4_n_5",
+            "I1": "\\alu_y0_inferred__5/i__carry__0_n_5",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7590>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7710>",
+            "I5": "BTNR_IBUF",
+            "O": "\\LED_OBUF[6]_inst_i_5_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_6",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7b30>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7d10>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7e90>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc050>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc1d0>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc350>",
+            "O": "\\LED_OBUF[6]_inst_i_6_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_1",
+          "module": "LUT6",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc650>",
+            "I1": "BTNC_IBUF",
+            "I2": "BTND_IBUF",
+            "I3": "\\LED_OBUF[7]_inst_i_2_n_0",
+            "I4": "BTNU_IBUF",
+            "I5": "\\LED_OBUF[7]_inst_i_3_n_0",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecccbf0>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_2",
+          "module": "LUT6",
+          "connections": {
+            "I0": "p_1_in2_in",
+            "I1": "\\alu_y0_inferred__5/i__carry__0_n_4",
+            "I2": "BTNL_IBUF",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccd0d0>",
+            "I4": "BTNR_IBUF",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccd310>",
+            "O": "\\LED_OBUF[7]_inst_i_2_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_3",
+          "module": "LUT6",
+          "connections": {
+            "I0": "\\LED_OBUF[15]_inst_i_5_n_0",
+            "I1": "\\LED_OBUF[7]_inst_i_5_n_0",
+            "I2": "BTNR_IBUF",
+            "I3": "BTNL_IBUF",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccd970>",
+            "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccdaf0>",
+            "O": "\\LED_OBUF[7]_inst_i_3_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\LED_OBUF[3]_inst_i_5_n_0",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2eccdf70>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2e282650>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ecce3f0>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ecce630>"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_5",
+          "module": "LUT3",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecce7b0>",
+            "I1": "\\LED_OBUF[15]_inst_i_3_n_0",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccea50>",
+            "O": "\\LED_OBUF[7]_inst_i_5_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_6",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccecf0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecceed0>",
+            "O": "\\LED_OBUF[7]_inst_i_6_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_7",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf170>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf350>",
+            "O": "\\LED_OBUF[7]_inst_i_7_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_8",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf5f0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf7d0>",
+            "O": "\\LED_OBUF[7]_inst_i_8_n_0"
+          }
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_9",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccfa70>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccfc50>",
+            "O": "\\LED_OBUF[7]_inst_i_9_n_0"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[0]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccfef0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8110>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8290>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8410>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8590>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[1]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8770>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8950>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8ad0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8c50>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8dd0>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[2]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8fb0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9190>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9310>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9490>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9610>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[3]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc97f0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc99d0>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9b50>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9cd0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9e50>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[4]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca030>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca210>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca390>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca510>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca690>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[5]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca870>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccaa50>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccabd0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccad50>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccaed0>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[6]_inst_i_1",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb0b0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb290>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb410>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb590>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb710>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[6]_inst_i_2",
+          "module": "LUT5",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb8f0>",
+            "I1": "BTNL_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccbb90>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccbd10>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccbe90>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08050>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[6]_inst_i_3",
+          "module": "LUT5",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08290>",
+            "I1": "BTNR_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08530>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed086b0>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08830>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed089b0>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[6]_inst_i_4",
+          "module": "LUT4",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08bf0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08dd0>",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08f50>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed090d0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09250>"
+          }
+        },
+        {
+          "name": "\\SEG_OBUF[6]_inst_i_5",
+          "module": "LUT5",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09430>",
+            "I1": "BTNU_IBUF",
+            "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed096d0>",
+            "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09850>",
+            "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed099d0>",
+            "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09b50>"
+          }
+        },
+        {
+          "name": "VCC",
+          "module": "VCC",
+          "connections": {
+            "P": "\\<const1>"
+          }
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\<const0>",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ed09fd0>",
+            "CYINIT": "\\<const1>",
+            "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2e282520>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0a450>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0a690>"
+          }
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0",
+          "module": "CARRY4",
+          "connections": {
+            "CI": "\\alu_y0_inferred__5/i__carry_n_0",
+            "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0a9f0>",
+            "CYINIT": "\\<const0>",
+            "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2eff3e30>",
+            "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0ae70>",
+            "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0b0b0>"
+          }
+        },
+        {
+          "name": "i__carry__0_i_1",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b290>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b470>",
+            "O": "i__carry__0_i_1_n_0"
+          }
+        },
+        {
+          "name": "i__carry__0_i_2",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b710>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b8f0>",
+            "O": "i__carry__0_i_2_n_0"
+          }
+        },
+        {
+          "name": "i__carry__0_i_3",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0bb90>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0bd70>",
+            "O": "i__carry__0_i_3_n_0"
+          }
+        },
+        {
+          "name": "i__carry__0_i_4",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4050>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4230>",
+            "O": "i__carry__0_i_4_n_0"
+          }
+        },
+        {
+          "name": "i__carry_i_1",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf44d0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf46b0>",
+            "O": "i__carry_i_1_n_0"
+          }
+        },
+        {
+          "name": "i__carry_i_2",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4950>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4b30>",
+            "O": "i__carry_i_2_n_0"
+          }
+        },
+        {
+          "name": "i__carry_i_3",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4dd0>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4fb0>",
+            "O": "i__carry_i_3_n_0"
+          }
+        },
+        {
+          "name": "i__carry_i_4",
+          "module": "LUT2",
+          "connections": {
+            "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf5250>",
+            "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf5430>",
+            "O": "i__carry_i_4_n_0"
+          }
+        }
+      ],
+      "nets": [
+        {
+          "name": "\\<const0>",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\<const1>",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNC_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTND_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNL_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNR_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "BTNU_IBUF",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "LED_OBUF",
+          "type": "wire",
+          "width": 11
+        },
+        {
+          "name": "\\LED_OBUF[0]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[0]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[13]_inst_i_5_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[14]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_5_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[15]_inst_i_6_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[1]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[1]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[2]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_5_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_6_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_7_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_8_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[3]_inst_i_9_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[4]_inst_i_5_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[5]_inst_i_5_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_5_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[6]_inst_i_6_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_4_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_5_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_6_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_7_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_8_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\LED_OBUF[7]_inst_i_9_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "SEG_OBUF",
+          "type": "wire",
+          "width": 7
+        },
+        {
+          "name": "SW_IBUF",
+          "type": "wire",
+          "width": 16
+        },
+        {
+          "name": "alu_carry__4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry__0_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_1",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_2",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_3",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_4",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_5",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_6",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "\\alu_y0_inferred__5/i__carry_n_7",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "data0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "digit_select",
+          "type": "wire",
+          "width": 2
+        },
+        {
+          "name": "hex_digit",
+          "type": "wire",
+          "width": 4
+        },
+        {
+          "name": "i__carry__0_i_1_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry__0_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry__0_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry__0_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry_i_1_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry_i_2_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry_i_3_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "i__carry_i_4_n_0",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "p_1_in2_in",
+          "type": "wire",
+          "width": 1
+        },
+        {
+          "name": "t1_trigger__0",
+          "type": "wire",
+          "width": 1
+        }
+      ],
+      "params": []
+    }
+  },
+  "instances": [
+    {
+      "name": "\\AN_OBUF[0]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2efab230>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e381d10>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[0]_inst_i_1",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e380cd0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e280c30>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2810f0>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[1]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eff31d0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eff99d0>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[1]_inst_i_1",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eff9d00>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed29f50>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed29950>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[2]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed357c0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed35d60>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[2]_inst_i_1",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2effd390>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2effd630>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed57d40>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[3]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const1>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ec33050>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[4]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const1>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ec32e10>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[5]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const1>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ef8e8e0>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[6]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const1>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ef8d9c0>"
+      }
+    },
+    {
+      "name": "\\AN_OBUF[7]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const1>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e8885f0>"
+      }
+    },
+    {
+      "name": "BTNC_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "BTNC",
+        "O": "BTNC_IBUF"
+      }
+    },
+    {
+      "name": "BTND_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "BTND",
+        "O": "BTND_IBUF"
+      }
+    },
+    {
+      "name": "BTNL_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "BTNL",
+        "O": "BTNL_IBUF"
+      }
+    },
+    {
+      "name": "BTNR_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "BTNR",
+        "O": "BTNR_IBUF"
+      }
+    },
+    {
+      "name": "BTNU_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "BTNU",
+        "O": "BTNU_IBUF"
+      }
+    },
+    {
+      "name": "CLK100MHZ_IBUF_BUFG_inst",
+      "module": "BUFG",
+      "connections": {
+        "I": "CLK100MHZ_IBUF",
+        "O": "CLK100MHZ_IBUF_BUFG"
+      }
+    },
+    {
+      "name": "CLK100MHZ_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "CLK100MHZ",
+        "O": "CLK100MHZ_IBUF"
+      }
+    },
+    {
+      "name": "CPU_RESETN_IBUF_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "CPU_RESETN",
+        "O": "CPU_RESETN_IBUF"
+      }
+    },
+    {
+      "name": "DP_OBUF_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const1>",
+        "O": "DP"
+      }
+    },
+    {
+      "name": "GND",
+      "module": "GND",
+      "connections": {
+        "G": "\\<const0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[0]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e8898b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2edd8c20>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[10]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ede2c50>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[11]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ede27d0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[12]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2edf2040>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2edf1d30>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecab950>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[14]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9df0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9010>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa090>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa4b0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[1]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecabbf0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca97f0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9550>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa270>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca91f0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca93d0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecabd10>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9070>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecab350>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca92b0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecab6b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa210>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca9b50>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8cb0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[8]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa510>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[9]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "\\<const0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8dd0>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[0]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8e90>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca8650>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[1]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2eca96d0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaa6f0>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[2]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecaadb0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecabf50>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[3]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270050>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270290>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[4]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2701d0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270590>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[5]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2703b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270890>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[6]_inst",
+      "module": "OBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2706b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270b90>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[0]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2709b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270e90>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[10]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270cb0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271190>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[11]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e270fb0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271490>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[12]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2712b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271790>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[13]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2715b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271a90>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[14]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2718b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271d90>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[15]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271bb0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272090>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[1]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e271eb0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272390>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[2]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2721b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272690>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[3]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2724b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272990>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[4]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2727b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272c90>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[5]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272ab0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272f90>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[6]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e272db0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273290>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[7]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2730b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273590>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[8]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2733b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273890>"
+      }
+    },
+    {
+      "name": "\\SW_IBUF[9]_inst",
+      "module": "IBUF",
+      "connections": {
+        "I": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2736b0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e273b90>"
+      }
+    },
+    {
+      "name": "VCC",
+      "module": "VCC",
+      "connections": {
+        "P": "\\<const1>"
+      }
+    },
+    {
+      "name": "\\refresh_counter[0]_i_2",
+      "module": "LUT1",
+      "connections": {
+        "I0": "CPU_RESETN_IBUF",
+        "O": "\\refresh_counter[0]_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\refresh_counter[0]_i_3",
+      "module": "LUT1",
+      "connections": {
+        "I0": "\\refresh_counter_reg_n_0_[0]",
+        "O": "\\refresh_counter[0]_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[0]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[0]_i_1_n_7",
+        "Q": "\\refresh_counter_reg_n_0_[0]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\<const0>",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2efaba10>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2e1d79d0>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2e1d7110>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2e281e00>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[10]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[8]_i_1_n_5",
+        "Q": "\\refresh_counter_reg_n_0_[10]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[11]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[8]_i_1_n_4",
+        "Q": "\\refresh_counter_reg_n_0_[11]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[12]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[12]_i_1_n_7",
+        "Q": "\\refresh_counter_reg_n_0_[12]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\refresh_counter_reg[8]_i_1_n_0",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2e2822c0>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2eff2e70>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2effa360>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2effa470>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[13]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[12]_i_1_n_6",
+        "Q": "\\refresh_counter_reg_n_0_[13]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[14]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[12]_i_1_n_5",
+        "Q": "\\refresh_counter_reg_n_0_[14]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[15]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[12]_i_1_n_4",
+        "Q": "\\refresh_counter_reg_n_0_[15]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[16]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[16]_i_1_n_7",
+        "Q": "\\refresh_counter_reg_n_0_[16]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\refresh_counter_reg[12]_i_1_n_0",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ed2a350>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2ed29550>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed36990>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ed36b70>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[17]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[16]_i_1_n_6",
+        "Q": "\\refresh_counter_reg_n_0_[17]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[18]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[16]_i_1_n_5",
+        "Q": "<pyverilog.vparser.ast.Pointer object at 0x707c2e27c1d0>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[19]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[16]_i_1_n_4",
+        "Q": "<pyverilog.vparser.ast.Pointer object at 0x707c2e27c650>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[1]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[0]_i_1_n_6",
+        "Q": "\\refresh_counter_reg_n_0_[1]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[2]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[0]_i_1_n_5",
+        "Q": "\\refresh_counter_reg_n_0_[2]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[3]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[0]_i_1_n_4",
+        "Q": "\\refresh_counter_reg_n_0_[3]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[4]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[4]_i_1_n_7",
+        "Q": "\\refresh_counter_reg_n_0_[4]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\refresh_counter_reg[0]_i_1_n_0",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2effdb70>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2effdc50>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed57860>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ec32b10>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[5]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[4]_i_1_n_6",
+        "Q": "\\refresh_counter_reg_n_0_[5]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[6]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[4]_i_1_n_5",
+        "Q": "\\refresh_counter_reg_n_0_[6]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[7]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[4]_i_1_n_4",
+        "Q": "\\refresh_counter_reg_n_0_[7]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[8]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[8]_i_1_n_7",
+        "Q": "\\refresh_counter_reg_n_0_[8]"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\refresh_counter_reg[4]_i_1_n_0",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ec32a50>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2ef8f8b0>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ef8d230>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2e889950>"
+      }
+    },
+    {
+      "name": "\\refresh_counter_reg[9]",
+      "module": "FDCE",
+      "connections": {
+        "C": "CLK100MHZ_IBUF_BUFG",
+        "CE": "\\<const1>",
+        "CLR": "\\refresh_counter[0]_i_2_n_0",
+        "D": "\\refresh_counter_reg[8]_i_1_n_6",
+        "Q": "\\refresh_counter_reg_n_0_[9]"
+      }
+    },
+    {
+      "name": "u_alu",
+      "module": "trojan_alu8",
+      "connections": {
+        "BTNC_IBUF": "BTNC_IBUF",
+        "BTND_IBUF": "BTND_IBUF",
+        "BTNL_IBUF": "BTNL_IBUF",
+        "BTNR_IBUF": "BTNR_IBUF",
+        "BTNU_IBUF": "BTNU_IBUF",
+        "LED_OBUF": "<pyverilog.vparser.ast.Concat object at 0x707c2e888870>",
+        "SEG_OBUF": "SEG_OBUF",
+        "SW_IBUF": "SW_IBUF",
+        "digit_select": "digit_select"
+      }
+    },
+    {
+      "name": "GND",
+      "module": "GND",
+      "connections": {
+        "G": "\\<const0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[0]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "t1_trigger__0",
+        "I1": "BTNL_IBUF",
+        "I2": "BTNU_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e26f830>",
+        "I4": "\\LED_OBUF[0]_inst_i_2_n_0",
+        "I5": "\\LED_OBUF[0]_inst_i_3_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e26fb30>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[0]_inst_i_2",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e26fbf0>",
+        "I1": "BTNR_IBUF",
+        "O": "\\LED_OBUF[0]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[0]_inst_i_3",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[3]_inst_i_5_n_7",
+        "I1": "\\alu_y0_inferred__5/i__carry_n_7",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2742f0>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2e274470>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[0]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_1",
+      "module": "LUT3",
+      "connections": {
+        "I0": "BTND_IBUF",
+        "I1": "BTNC_IBUF",
+        "I2": "alu_carry__4",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e274a70>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[13]_inst_i_3_n_0",
+        "I1": "BTNU_IBUF",
+        "I2": "data0",
+        "I3": "BTNR_IBUF",
+        "I4": "BTNL_IBUF",
+        "I5": "\\LED_OBUF[13]_inst_i_5_n_3",
+        "O": "alu_carry__4"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_3",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[15]_inst_i_3_n_0",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e275310>",
+        "I2": "\\LED_OBUF[6]_inst_i_6_n_0",
+        "I3": "BTNR_IBUF",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2e275610>",
+        "I5": "\\LED_OBUF[15]_inst_i_4_n_0",
+        "O": "\\LED_OBUF[13]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_4",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\LED_OBUF[7]_inst_i_4_n_0",
+        "CO": "data0",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2edd8b00>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2e192ed0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_5",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\alu_y0_inferred__5/i__carry__0_n_0",
+        "CO": "\\LED_OBUF[13]_inst_i_5_n_3",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Concat object at 0x707c2e192bd0>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2edf3b60>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[14]_inst_i_1",
+      "module": "LUT3",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2763f0>",
+        "I1": "\\LED_OBUF[14]_inst_i_2_n_0",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276810>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276990>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[14]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276a50>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276cf0>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276e70>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e276ff0>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2e277170>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2772f0>",
+        "O": "\\LED_OBUF[14]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[15]_inst_i_2_n_0",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2776b0>",
+        "I2": "\\LED_OBUF[15]_inst_i_3_n_0",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2e2778f0>",
+        "I4": "BTNR_IBUF",
+        "I5": "\\LED_OBUF[15]_inst_i_4_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2e277bf0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[15]_inst_i_5_n_0",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2e277ef0>",
+        "I2": "BTNR_IBUF",
+        "I3": "\\LED_OBUF[15]_inst_i_6_n_0",
+        "I4": "BTNL_IBUF",
+        "I5": "BTNU_IBUF",
+        "O": "\\LED_OBUF[15]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_3",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4410>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc46b0>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4830>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc49b0>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4b30>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc4cb0>",
+        "O": "\\LED_OBUF[15]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_4",
+      "module": "LUT2",
+      "connections": {
+        "I0": "BTNU_IBUF",
+        "I1": "BTNL_IBUF",
+        "O": "\\LED_OBUF[15]_inst_i_4_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_5",
+      "module": "LUT3",
+      "connections": {
+        "I0": "\\LED_OBUF[6]_inst_i_6_n_0",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5310>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5490>",
+        "O": "\\LED_OBUF[15]_inst_i_5_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_6",
+      "module": "LUT5",
+      "connections": {
+        "I0": "p_1_in2_in",
+        "I1": "\\alu_y0_inferred__5/i__carry__0_n_4",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc58b0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5a30>",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[15]_inst_i_6_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[1]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc5cd0>",
+        "I1": "BTNC_IBUF",
+        "I2": "BTND_IBUF",
+        "I3": "\\LED_OBUF[1]_inst_i_2_n_0",
+        "I4": "BTNU_IBUF",
+        "I5": "\\LED_OBUF[1]_inst_i_3_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6330>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[1]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[3]_inst_i_5_n_6",
+        "I1": "\\alu_y0_inferred__5/i__carry_n_6",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc67b0>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6930>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[1]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[1]_inst_i_3",
+      "module": "LUT5",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6bd0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6e70>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc6ff0>",
+        "I3": "BTNL_IBUF",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[1]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc7350>",
+        "I1": "t1_trigger__0",
+        "I2": "\\LED_OBUF[2]_inst_i_2_n_0",
+        "I3": "\\LED_OBUF[2]_inst_i_3_n_0",
+        "I4": "BTNU_IBUF",
+        "I5": "\\LED_OBUF[2]_inst_i_4_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc79b0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc7d70>",
+        "I3": "BTNR_IBUF",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc7fb0>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecec170>",
+        "O": "\\LED_OBUF[2]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_3",
+      "module": "LUT5",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecec5f0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecec770>",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[2]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_4",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[3]_inst_i_5_n_5",
+        "I1": "\\alu_y0_inferred__5/i__carry_n_5",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ececd10>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecece90>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[2]_inst_i_4_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eced2b0>",
+        "I1": "t1_trigger__0",
+        "I2": "\\LED_OBUF[3]_inst_i_2_n_0",
+        "I3": "\\LED_OBUF[3]_inst_i_3_n_0",
+        "I4": "BTNU_IBUF",
+        "I5": "\\LED_OBUF[3]_inst_i_4_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eced850>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[15]_inst_i_4_n_0",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecedbb0>",
+        "I2": "BTNR_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eceddf0>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecedf70>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecee0f0>",
+        "O": "\\LED_OBUF[3]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_3",
+      "module": "LUT5",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecee5d0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecee750>",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[3]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_4",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[3]_inst_i_5_n_4",
+        "I1": "\\alu_y0_inferred__5/i__carry_n_4",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eceed50>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eceeed0>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[3]_inst_i_4_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\<const0>",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ecbc7c0>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2e1d6c10>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ecef890>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ecefad0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_6",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecefc50>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecefe30>",
+        "O": "\\LED_OBUF[3]_inst_i_6_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_7",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4110>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd42f0>",
+        "O": "\\LED_OBUF[3]_inst_i_7_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_8",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4590>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4770>",
+        "O": "\\LED_OBUF[3]_inst_i_8_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_9",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4a10>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd4bf0>",
+        "O": "\\LED_OBUF[3]_inst_i_9_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[4]_inst_i_2_n_0",
+        "I1": "BTNL_IBUF",
+        "I2": "BTNU_IBUF",
+        "I3": "\\LED_OBUF[4]_inst_i_3_n_0",
+        "I4": "\\LED_OBUF[4]_inst_i_4_n_0",
+        "I5": "\\LED_OBUF[4]_inst_i_5_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd53d0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_2",
+      "module": "LUT3",
+      "connections": {
+        "I0": "BTND_IBUF",
+        "I1": "BTNC_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd57f0>",
+        "O": "\\LED_OBUF[4]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_3",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5a90>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5c70>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5df0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd5f70>",
+        "I4": "BTNR_IBUF",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd61b0>",
+        "O": "\\LED_OBUF[4]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_4",
+      "module": "LUT5",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6690>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6810>",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[4]_inst_i_4_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_5",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[7]_inst_i_4_n_7",
+        "I1": "\\alu_y0_inferred__5/i__carry__0_n_7",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6e10>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd6f90>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[4]_inst_i_5_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd73b0>",
+        "I1": "t1_trigger__0",
+        "I2": "\\LED_OBUF[5]_inst_i_2_n_0",
+        "I3": "\\LED_OBUF[5]_inst_i_3_n_0",
+        "I4": "BTNU_IBUF",
+        "I5": "\\LED_OBUF[5]_inst_i_4_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd7950>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_2",
+      "module": "LUT4",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecd7d70>",
+        "I3": "\\LED_OBUF[5]_inst_i_5_n_0",
+        "O": "\\LED_OBUF[5]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_3",
+      "module": "LUT5",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece42f0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece4470>",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[5]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_4",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[7]_inst_i_4_n_6",
+        "I1": "\\alu_y0_inferred__5/i__carry__0_n_6",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece4a70>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece4bf0>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[5]_inst_i_4_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_5",
+      "module": "LUT6",
+      "connections": {
+        "I0": "BTNR_IBUF",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5130>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece52b0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5430>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece55b0>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5730>",
+        "O": "\\LED_OBUF[5]_inst_i_5_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5a30>",
+        "I1": "t1_trigger__0",
+        "I2": "\\LED_OBUF[6]_inst_i_3_n_0",
+        "I3": "\\LED_OBUF[6]_inst_i_4_n_0",
+        "I4": "BTNU_IBUF",
+        "I5": "\\LED_OBUF[6]_inst_i_5_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece5fd0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_2",
+      "module": "LUT2",
+      "connections": {
+        "I0": "BTNC_IBUF",
+        "I1": "BTND_IBUF",
+        "O": "t1_trigger__0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_3",
+      "module": "LUT6",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece66f0>",
+        "I3": "\\LED_OBUF[15]_inst_i_3_n_0",
+        "I4": "BTNR_IBUF",
+        "I5": "\\LED_OBUF[6]_inst_i_6_n_0",
+        "O": "\\LED_OBUF[6]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_4",
+      "module": "LUT5",
+      "connections": {
+        "I0": "BTNL_IBUF",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece6e10>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece6f90>",
+        "I4": "BTNR_IBUF",
+        "O": "\\LED_OBUF[6]_inst_i_4_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_5",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[7]_inst_i_4_n_5",
+        "I1": "\\alu_y0_inferred__5/i__carry__0_n_5",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7590>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7710>",
+        "I5": "BTNR_IBUF",
+        "O": "\\LED_OBUF[6]_inst_i_5_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_6",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7b30>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7d10>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ece7e90>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc050>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc1d0>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc350>",
+        "O": "\\LED_OBUF[6]_inst_i_6_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_1",
+      "module": "LUT6",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccc650>",
+        "I1": "BTNC_IBUF",
+        "I2": "BTND_IBUF",
+        "I3": "\\LED_OBUF[7]_inst_i_2_n_0",
+        "I4": "BTNU_IBUF",
+        "I5": "\\LED_OBUF[7]_inst_i_3_n_0",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecccbf0>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_2",
+      "module": "LUT6",
+      "connections": {
+        "I0": "p_1_in2_in",
+        "I1": "\\alu_y0_inferred__5/i__carry__0_n_4",
+        "I2": "BTNL_IBUF",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccd0d0>",
+        "I4": "BTNR_IBUF",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccd310>",
+        "O": "\\LED_OBUF[7]_inst_i_2_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_3",
+      "module": "LUT6",
+      "connections": {
+        "I0": "\\LED_OBUF[15]_inst_i_5_n_0",
+        "I1": "\\LED_OBUF[7]_inst_i_5_n_0",
+        "I2": "BTNR_IBUF",
+        "I3": "BTNL_IBUF",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccd970>",
+        "I5": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccdaf0>",
+        "O": "\\LED_OBUF[7]_inst_i_3_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\LED_OBUF[3]_inst_i_5_n_0",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2eccdf70>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2e282650>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ecce3f0>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ecce630>"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_5",
+      "module": "LUT3",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecce7b0>",
+        "I1": "\\LED_OBUF[15]_inst_i_3_n_0",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccea50>",
+        "O": "\\LED_OBUF[7]_inst_i_5_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_6",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccecf0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecceed0>",
+        "O": "\\LED_OBUF[7]_inst_i_6_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_7",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf170>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf350>",
+        "O": "\\LED_OBUF[7]_inst_i_7_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_8",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf5f0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccf7d0>",
+        "O": "\\LED_OBUF[7]_inst_i_8_n_0"
+      }
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_9",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccfa70>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccfc50>",
+        "O": "\\LED_OBUF[7]_inst_i_9_n_0"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[0]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccfef0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8110>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8290>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8410>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8590>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[1]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8770>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8950>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8ad0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8c50>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8dd0>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[2]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc8fb0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9190>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9310>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9490>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9610>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[3]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc97f0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc99d0>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9b50>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9cd0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecc9e50>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[4]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca030>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca210>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca390>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca510>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca690>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[5]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecca870>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccaa50>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccabd0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccad50>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccaed0>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[6]_inst_i_1",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb0b0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb290>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb410>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb590>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb710>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[6]_inst_i_2",
+      "module": "LUT5",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccb8f0>",
+        "I1": "BTNL_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccbb90>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccbd10>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2eccbe90>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08050>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[6]_inst_i_3",
+      "module": "LUT5",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08290>",
+        "I1": "BTNR_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08530>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed086b0>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08830>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed089b0>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[6]_inst_i_4",
+      "module": "LUT4",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08bf0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08dd0>",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed08f50>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed090d0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09250>"
+      }
+    },
+    {
+      "name": "\\SEG_OBUF[6]_inst_i_5",
+      "module": "LUT5",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09430>",
+        "I1": "BTNU_IBUF",
+        "I2": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed096d0>",
+        "I3": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09850>",
+        "I4": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed099d0>",
+        "O": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed09b50>"
+      }
+    },
+    {
+      "name": "VCC",
+      "module": "VCC",
+      "connections": {
+        "P": "\\<const1>"
+      }
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\<const0>",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ed09fd0>",
+        "CYINIT": "\\<const1>",
+        "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2e282520>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0a450>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0a690>"
+      }
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0",
+      "module": "CARRY4",
+      "connections": {
+        "CI": "\\alu_y0_inferred__5/i__carry_n_0",
+        "CO": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0a9f0>",
+        "CYINIT": "\\<const0>",
+        "DI": "<pyverilog.vparser.ast.Partselect object at 0x707c2eff3e30>",
+        "O": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0ae70>",
+        "S": "<pyverilog.vparser.ast.Concat object at 0x707c2ed0b0b0>"
+      }
+    },
+    {
+      "name": "i__carry__0_i_1",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b290>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b470>",
+        "O": "i__carry__0_i_1_n_0"
+      }
+    },
+    {
+      "name": "i__carry__0_i_2",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b710>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0b8f0>",
+        "O": "i__carry__0_i_2_n_0"
+      }
+    },
+    {
+      "name": "i__carry__0_i_3",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0bb90>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ed0bd70>",
+        "O": "i__carry__0_i_3_n_0"
+      }
+    },
+    {
+      "name": "i__carry__0_i_4",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4050>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4230>",
+        "O": "i__carry__0_i_4_n_0"
+      }
+    },
+    {
+      "name": "i__carry_i_1",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf44d0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf46b0>",
+        "O": "i__carry_i_1_n_0"
+      }
+    },
+    {
+      "name": "i__carry_i_2",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4950>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4b30>",
+        "O": "i__carry_i_2_n_0"
+      }
+    },
+    {
+      "name": "i__carry_i_3",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4dd0>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf4fb0>",
+        "O": "i__carry_i_3_n_0"
+      }
+    },
+    {
+      "name": "i__carry_i_4",
+      "module": "LUT2",
+      "connections": {
+        "I0": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf5250>",
+        "I1": "<pyverilog.vparser.ast.Pointer object at 0x707c2ecf5430>",
+        "O": "i__carry_i_4_n_0"
+      }
+    }
+  ],
+  "nets": [
+    {
+      "name": "\\<const0>",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\<const1>",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "AN",
+      "type": "wire",
+      "width": 8
+    },
+    {
+      "name": "AN_OBUF",
+      "type": "wire",
+      "width": 3
+    },
+    {
+      "name": "BTNC",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNC_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTND",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTND_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNL",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNL_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNR",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNR_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNU",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNU_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "CLK100MHZ",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "CLK100MHZ_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "CLK100MHZ_IBUF_BUFG",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "CPU_RESETN",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "CPU_RESETN_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "DP",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "LED",
+      "type": "wire",
+      "width": 16
+    },
+    {
+      "name": "LED_OBUF",
+      "type": "wire",
+      "width": 16
+    },
+    {
+      "name": "SEG",
+      "type": "wire",
+      "width": 7
+    },
+    {
+      "name": "SEG_OBUF",
+      "type": "wire",
+      "width": 7
+    },
+    {
+      "name": "SW",
+      "type": "wire",
+      "width": 16
+    },
+    {
+      "name": "SW_IBUF",
+      "type": "wire",
+      "width": 16
+    },
+    {
+      "name": "digit_select",
+      "type": "wire",
+      "width": 2
+    },
+    {
+      "name": "\\refresh_counter[0]_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter[0]_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[0]_i_1_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[12]_i_1_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[16]_i_1_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[4]_i_1_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg[8]_i_1_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[0]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[10]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[11]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[12]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[13]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[14]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[15]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[16]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[17]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[1]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[2]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[3]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[4]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[5]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[6]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[7]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[8]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\refresh_counter_reg_n_0_[9]",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\<const0>",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\<const1>",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNC_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTND_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNL_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNR_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "BTNU_IBUF",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "LED_OBUF",
+      "type": "wire",
+      "width": 11
+    },
+    {
+      "name": "\\LED_OBUF[0]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[0]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[13]_inst_i_5_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[14]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_5_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[15]_inst_i_6_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[1]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[1]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[2]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_5_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_6_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_7_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_8_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[3]_inst_i_9_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[4]_inst_i_5_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[5]_inst_i_5_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_5_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[6]_inst_i_6_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_4_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_5_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_6_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_7_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_8_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\LED_OBUF[7]_inst_i_9_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "SEG_OBUF",
+      "type": "wire",
+      "width": 7
+    },
+    {
+      "name": "SW_IBUF",
+      "type": "wire",
+      "width": 16
+    },
+    {
+      "name": "alu_carry__4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry__0_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_1",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_2",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_3",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_4",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_5",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_6",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "\\alu_y0_inferred__5/i__carry_n_7",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "data0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "digit_select",
+      "type": "wire",
+      "width": 2
+    },
+    {
+      "name": "hex_digit",
+      "type": "wire",
+      "width": 4
+    },
+    {
+      "name": "i__carry__0_i_1_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry__0_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry__0_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry__0_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry_i_1_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry_i_2_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry_i_3_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "i__carry_i_4_n_0",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "p_1_in2_in",
+      "type": "wire",
+      "width": 1
+    },
+    {
+      "name": "t1_trigger__0",
+      "type": "wire",
+      "width": 1
+    }
+  ],
+  "ports": [
+    {
+      "name": "CLK100MHZ",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "CPU_RESETN",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "SW",
+      "direction": "input",
+      "width": 16
+    },
+    {
+      "name": "BTNU",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTNL",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTNR",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTNC",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTND",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "LED",
+      "direction": "output",
+      "width": 16
+    },
+    {
+      "name": "SEG",
+      "direction": "output",
+      "width": 7
+    },
+    {
+      "name": "DP",
+      "direction": "output",
+      "width": 1
+    },
+    {
+      "name": "AN",
+      "direction": "output",
+      "width": 8
+    },
+    {
+      "name": "LED_OBUF",
+      "direction": "output",
+      "width": 11
+    },
+    {
+      "name": "SEG_OBUF",
+      "direction": "output",
+      "width": 7
+    },
+    {
+      "name": "SW_IBUF",
+      "direction": "input",
+      "width": 16
+    },
+    {
+      "name": "BTNR_IBUF",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTNL_IBUF",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTNU_IBUF",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "digit_select",
+      "direction": "input",
+      "width": 2
+    },
+    {
+      "name": "BTND_IBUF",
+      "direction": "input",
+      "width": 1
+    },
+    {
+      "name": "BTNC_IBUF",
+      "direction": "input",
+      "width": 1
+    }
+  ]
+}

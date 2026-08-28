@@ -1,0 +1,21 @@
+[*] Parsing Reference Timing Report: DATA/timing/clean/report.rpt
+[*] Parsing Suspect Timing Report: DATA/timing/trojan/T1_report.rpt
+[*] Performing Timing Comparison (SCA)
+[+] Saved comparison results to REPORTS/sca/timing_comparison.json
+[*] Generating Visualizations
+[+] Saved visualizations to REPORTS/sca/
+
+====================================================
+ SIDE-CHANNEL TIMING ANALYSIS (STA) RESULT SUMMARY
+====================================================
+ Reference Design: ALU8_CLEAN
+ Suspect Design:   ALU8_TROJAN
+ Max Delay Diff:   1.25 ns
+ Affected Endpoints: 8
+ Worst Endpoint:   LED[15]
+----------------------------------------------------
+ Timing Anomaly Detected: YES
+ Potential Timing Leakage: NO
+ Confidence: HIGH
+====================================================
+

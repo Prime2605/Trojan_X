@@ -1,0 +1,118 @@
+{
+    "reference_design": "ALU8_CLEAN",
+    "suspect_design": "ALU8_TROJAN",
+    "metrics": {
+        "max_endpoint_delay_difference_ns": 1.076,
+        "worst_affected_endpoint": "LED[13]",
+        "anomalies_count": 9,
+        "anomalies": [
+            {
+                "endpoint": "LED[14]",
+                "delay_diff_ns": 0.768,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT3",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[2]",
+                "delay_diff_ns": 0.064,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[3]",
+                "delay_diff_ns": 0.235,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[13]",
+                "delay_diff_ns": 1.076,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT3",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[0]",
+                "delay_diff_ns": 0.785,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[1]",
+                "delay_diff_ns": 0.43,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[7]",
+                "delay_diff_ns": 1.03,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[5]",
+                "delay_diff_ns": 0.363,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[6]",
+                "delay_diff_ns": 0.032,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            }
+        ]
+    },
+    "assessment": {
+        "timing_anomaly": true,
+        "potential_timing_leakage": false,
+        "confidence": "HIGH",
+        "note": "Endpoint-specific structural delay penalty detected on 9 endpoint(s). True side-channel exploitability requires physical observability."
+    }
+}

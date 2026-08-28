@@ -1,9 +1,389 @@
 {
   "summary": {
-    "total_suspicious": 0,
-    "analyzed_count": 0,
-    "classifications": {},
-    "estimated_types": []
+    "total_suspicious": 10,
+    "analyzed_count": 10,
+    "classifications": {
+      "likely_trigger": 10
+    },
+    "estimated_types": [
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (moderate trigger)",
+      "combinational (simple trigger)",
+      "combinational (moderate trigger)"
+    ]
   },
-  "analysis": []
+  "analysis": [
+    {
+      "cell": "\\LED_OBUF[3]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.5072,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNR",
+          "BTNL",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 15,
+        "cone_cell_types": {
+          "LUT2": 2,
+          "IBUF": 5,
+          "LUT6": 2,
+          "LUT5": 1
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[5]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.5072,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNL",
+          "BTNR",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 15,
+        "cone_cell_types": {
+          "LUT6": 2,
+          "LUT2": 1,
+          "IBUF": 5,
+          "LUT5": 1,
+          "LUT4": 1
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[4]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.4972,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNL",
+          "BTNR",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 14,
+        "cone_cell_types": {
+          "LUT5": 1,
+          "IBUF": 5,
+          "LUT6": 2,
+          "LUT3": 1
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "u_alu",
+      "cell_type": "trojan_alu8",
+      "suspicion_score": 0.4853,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "SW_IBUF",
+          "BTNR",
+          "BTNL",
+          "BTND",
+          "BTNC",
+          "BTNU",
+          "digit_select"
+        ],
+        "trigger_input_count": 7,
+        "logic_cone_size": 12,
+        "cone_cell_types": {
+          "IBUF": 5
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[13]_inst_i_1",
+      "cell_type": "LUT3",
+      "suspicion_score": 0.4828,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNR",
+          "BTNL",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 17,
+        "cone_cell_types": {
+          "LUT6": 4,
+          "LUT2": 1,
+          "CARRY4": 2,
+          "IBUF": 5
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[6]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.4824,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNR",
+          "BTNL",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 16,
+        "cone_cell_types": {
+          "LUT5": 1,
+          "LUT2": 1,
+          "IBUF": 5,
+          "LUT6": 4
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[7]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.4824,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNR",
+          "BTNL",
+          "BTND",
+          "BTNU",
+          "BTNC"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 16,
+        "cone_cell_types": {
+          "LUT3": 2,
+          "IBUF": 5,
+          "LUT6": 4
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[2]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.4707,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNR",
+          "BTNL",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 14,
+        "cone_cell_types": {
+          "LUT5": 1,
+          "LUT2": 1,
+          "IBUF": 5,
+          "LUT6": 2
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[13]_inst_i_2",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.4688,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNR",
+          "BTNL",
+          "BTNU"
+        ],
+        "trigger_input_count": 3,
+        "logic_cone_size": 12,
+        "cone_cell_types": {
+          "LUT6": 3,
+          "LUT2": 1,
+          "CARRY4": 2,
+          "IBUF": 3
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 1
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (simple trigger)"
+      }
+    },
+    {
+      "cell": "\\LED_OBUF[0]_inst_i_1",
+      "cell_type": "LUT6",
+      "suspicion_score": 0.4585,
+      "classification": "likely_trigger",
+      "trigger_analysis": {
+        "potential_trigger_inputs": [
+          "BTNL",
+          "BTNR",
+          "BTND",
+          "BTNC",
+          "BTNU"
+        ],
+        "trigger_input_count": 5,
+        "logic_cone_size": 13,
+        "cone_cell_types": {
+          "LUT2": 2,
+          "IBUF": 5,
+          "LUT6": 1
+        }
+      },
+      "payload_analysis": {
+        "affected_outputs": [],
+        "affected_output_count": 0,
+        "influence_cone_size": 0
+      },
+      "sequential_analysis": {
+        "has_sequential_elements": false,
+        "sequential_count": 0,
+        "sequential_cells": []
+      },
+      "impact_assessment": {
+        "severity": "none",
+        "trojan_type_estimate": "combinational (moderate trigger)"
+      }
+    }
+  ]
 }

@@ -7,31 +7,10 @@
         "anomalies_count": 9,
         "anomalies": [
             {
-                "endpoint": "LED[14]",
-                "delay_diff_ns": 0.768,
-                "suspect_elements": [
-                    "CARRY4",
-                    "IBUF",
-                    "LUT2",
-                    "LUT3",
-                    "LUT6",
-                    "OBUF"
-                ]
-            },
-            {
-                "endpoint": "LED[2]",
-                "delay_diff_ns": 0.064,
-                "suspect_elements": [
-                    "CARRY4",
-                    "IBUF",
-                    "LUT2",
-                    "LUT6",
-                    "OBUF"
-                ]
-            },
-            {
-                "endpoint": "LED[3]",
-                "delay_diff_ns": 0.235,
+                "endpoint": "LED[0]",
+                "delay_diff_ns": 0.785,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
@@ -43,6 +22,8 @@
             {
                 "endpoint": "LED[13]",
                 "delay_diff_ns": 1.076,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
@@ -53,12 +34,15 @@
                 ]
             },
             {
-                "endpoint": "LED[0]",
-                "delay_diff_ns": 0.785,
+                "endpoint": "LED[14]",
+                "delay_diff_ns": 0.768,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
                     "LUT2",
+                    "LUT3",
                     "LUT6",
                     "OBUF"
                 ]
@@ -66,6 +50,8 @@
             {
                 "endpoint": "LED[1]",
                 "delay_diff_ns": 0.43,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
@@ -75,8 +61,23 @@
                 ]
             },
             {
-                "endpoint": "LED[7]",
-                "delay_diff_ns": 1.03,
+                "endpoint": "LED[2]",
+                "delay_diff_ns": 0.064,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[3]",
+                "delay_diff_ns": 0.235,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
@@ -88,6 +89,8 @@
             {
                 "endpoint": "LED[5]",
                 "delay_diff_ns": 0.363,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
@@ -99,6 +102,21 @@
             {
                 "endpoint": "LED[6]",
                 "delay_diff_ns": 0.032,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
+                "suspect_elements": [
+                    "CARRY4",
+                    "IBUF",
+                    "LUT2",
+                    "LUT6",
+                    "OBUF"
+                ]
+            },
+            {
+                "endpoint": "LED[7]",
+                "delay_diff_ns": 1.03,
+                "logic_diff_ns": 0.0,
+                "route_diff_ns": 0.0,
                 "suspect_elements": [
                     "CARRY4",
                     "IBUF",
@@ -109,10 +127,185 @@
             }
         ]
     },
+    "delay_statistics": {
+        "mean_diff_ns": 0.3655,
+        "median_diff_ns": 0.363,
+        "stdev_diff_ns": 0.5124,
+        "min_diff_ns": -0.41,
+        "max_diff_ns": 1.076,
+        "total_endpoints": 11
+    },
+    "endpoint_details": [
+        {
+            "endpoint": "LED[0]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 13.944,
+            "sus_delay_ns": 14.729,
+            "delay_diff_ns": 0.785,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[13]",
+            "startpoint": "SW[12]",
+            "ref_delay_ns": 13.803,
+            "sus_delay_ns": 14.879,
+            "delay_diff_ns": 1.076,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[14]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 15.852,
+            "sus_delay_ns": 16.62,
+            "delay_diff_ns": 0.768,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[15]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 15.192,
+            "sus_delay_ns": 14.839,
+            "delay_diff_ns": -0.353,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[1]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 14.137,
+            "sus_delay_ns": 14.567,
+            "delay_diff_ns": 0.43,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[2]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 14.956,
+            "sus_delay_ns": 15.02,
+            "delay_diff_ns": 0.064,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[3]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 14.724,
+            "sus_delay_ns": 14.959,
+            "delay_diff_ns": 0.235,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[4]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 14.428,
+            "sus_delay_ns": 14.018,
+            "delay_diff_ns": -0.41,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[5]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 14.092,
+            "sus_delay_ns": 14.455,
+            "delay_diff_ns": 0.363,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[6]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 13.832,
+            "sus_delay_ns": 13.864,
+            "delay_diff_ns": 0.032,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        },
+        {
+            "endpoint": "LED[7]",
+            "startpoint": "SW[8]",
+            "ref_delay_ns": 13.458,
+            "sus_delay_ns": 14.488,
+            "delay_diff_ns": 1.03,
+            "ref_logic_ns": 0.0,
+            "sus_logic_ns": 0.0,
+            "logic_diff_ns": 0.0,
+            "ref_route_ns": 0.0,
+            "sus_route_ns": 0.0,
+            "route_diff_ns": 0.0,
+            "in_ref": true,
+            "in_sus": true
+        }
+    ],
     "assessment": {
         "timing_anomaly": true,
-        "potential_timing_leakage": false,
+        "potential_timing_leakage": true,
         "confidence": "HIGH",
-        "note": "Endpoint-specific structural delay penalty detected on 9 endpoint(s). True side-channel exploitability requires physical observability."
+        "note": "Endpoint-specific structural delay penalty detected on 9 endpoint(s). Max delta = 1.076 ns."
     }
 }

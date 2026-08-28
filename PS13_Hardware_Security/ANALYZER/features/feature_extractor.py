@@ -63,6 +63,19 @@ class FeatureExtractor:
             logic_cone = self.cg.get_logic_cone(cell_name)
             influence_cone = self.cg.get_influence_cone(cell_name)
 
+            # Check if this cell directly drives an output port
+            successors = self.cg.get_successors(cell_name)
+            drives_output = any(
+                self.cg.graph.nodes[s].get("direction") == "output"
+                for s in successors if s in self.cg.graph.nodes
+            )
+
+            # Count unique primary input ports in the logic cone
+            unique_input_sources = sum(
+                1 for n in logic_cone
+                if self.cg.graph.nodes.get(n, {}).get("direction") == "input"
+            )
+
             self.cell_features[cell_name] = {
                 "cell_type": attrs.get("cell_type", "unknown"),
                 "fan_in": fan_in,
@@ -72,6 +85,8 @@ class FeatureExtractor:
                 "influence_cone_size": len(influence_cone),
                 "predecessor_count": len(self.cg.get_predecessors(cell_name)),
                 "successor_count": len(self.cg.get_successors(cell_name)),
+                "drives_output": drives_output,
+                "unique_input_sources": unique_input_sources,
             }
 
     def _extract_design_features(self) -> None:

@@ -29,17 +29,19 @@ class TrojanDetector:
 
     # Default indicator weights
     DEFAULT_WEIGHTS = {
-        "fanout_anomaly":     0.25,
-        "fanin_anomaly":      0.20,
-        "depth_anomaly":      0.15,
-        "cone_size_anomaly":  0.20,
+        "fanout_anomaly":     0.20,
+        "fanin_anomaly":      0.15,
+        "depth_anomaly":      0.10,
+        "cone_size_anomaly":  0.15,
         "rare_cell_type":     0.10,
         "connectivity_ratio": 0.10,
+        "output_proximity":   0.10,
+        "input_diversity":    0.10,
     }
 
     def __init__(self, feature_data: Dict[str, Any],
                  weights: Optional[Dict[str, float]] = None,
-                 threshold: float = 0.6):
+                 threshold: float = 0.45):
         """
         Initialize detector with extracted feature data.
 
@@ -126,6 +128,16 @@ class TrojanDetector:
             max_product = (fo_stats.get("max", 1)) * (fi_stats.get("max", 1))
             product = features["fan_in"] * features["fan_out"]
             indicators["connectivity_ratio"] = product / max_product if max_product else 0
+
+            # 7. Output proximity — does this cell directly drive an output port?
+            successors = [s for s in features.get("_successors", [])]
+            drives_output = 1.0 if features.get("drives_output", False) else 0.0
+            indicators["output_proximity"] = drives_output
+
+            # 8. Input diversity — how many distinct primary input ports feed this cell?
+            unique_sources = features.get("unique_input_sources", 0)
+            total_inputs = self.design_features.get("total_ports", 1)
+            indicators["input_diversity"] = min(unique_sources / max(total_inputs * 0.3, 1), 1.0)
 
             # Weighted composite score
             total_score = sum(

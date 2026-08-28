@@ -2,10 +2,10 @@
   PS13 HARDWARE SECURITY ANALYSIS REPORT
 ======================================================================
   Design:    ALU8
-  Generated: 2026-08-28T17:26:27.309480
+  Generated: 2026-08-28T22:45:57.469932
 
-  VERDICT:    CLEAN — no anomalies detected
-  RISK LEVEL: NONE
+  VERDICT:    SUSPICIOUS — structural anomalies detected
+  RISK LEVEL: MEDIUM
 
 ----------------------------------------------------------------------
   STRUCTURAL ANALYSIS
@@ -14,10 +14,16 @@
     Max logic depth:  5
 
   TROJAN ANALYSIS
-    Suspicious cells: 0
+    Suspicious cells: 10
+      - \LED_OBUF[3]_inst_i_1 (score: 0.5072)
+      - \LED_OBUF[5]_inst_i_1 (score: 0.5072)
+      - \LED_OBUF[4]_inst_i_1 (score: 0.4972)
+      - u_alu (score: 0.4853)
+      - \LED_OBUF[13]_inst_i_1 (score: 0.4828)
 
   RECOMMENDATIONS
-    • Design appears clean — no immediate action required
-    • Consider periodic re-analysis if design evolves
+    • Review structural anomalies in detail
+    • Run timing analysis if not already done
+    • Compare against clean reference netlist
 
 ======================================================================

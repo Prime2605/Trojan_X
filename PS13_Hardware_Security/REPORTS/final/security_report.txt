@@ -2,7 +2,7 @@
   PS13 HARDWARE SECURITY ANALYSIS REPORT
 ======================================================================
   Design:    ALU8
-  Generated: 2026-08-28T23:09:06.519190
+  Generated: 2026-08-28T23:57:59.344543
 
   VERDICT:    CLEAN — no anomalies detected
   RISK LEVEL: NONE

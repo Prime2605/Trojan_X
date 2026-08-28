@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/prime/Trojan_X/PS13_Hardware_Security/FPGA/Nexys_A7_100T/testbench/tb_recovery.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_recovery
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v" into library work
+INFO: [VRFC 10-311] analyzing module alu8_top
+INFO: [VRFC 10-311] analyzing module trojan_alu8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/prime/2025.1/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl

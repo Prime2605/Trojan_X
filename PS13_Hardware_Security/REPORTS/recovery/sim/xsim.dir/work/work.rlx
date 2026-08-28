@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 21 2025
+22:59:56
+/home/prime/2025.1/data/verilog/src/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+/home/prime/Trojan_X/PS13_Hardware_Security/FPGA/Nexys_A7_100T/testbench/tb_recovery.v,1787941404,verilog,,/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v,,tb_recovery,,,,,,,,
+/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v,1787938400,verilog,,/home/prime/2025.1/data/verilog/src/glbl.v,,alu8_top;trojan_alu8,,,,,,,,

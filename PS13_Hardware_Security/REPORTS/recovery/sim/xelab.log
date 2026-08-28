@@ -1,0 +1,13 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/prime/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab -L unisims_ver -debug typical -top tb_recovery -top glbl -snapshot tb_recovery_snapshot 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'CO' [/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v:761]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v:1166]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'CO' [/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v:1177]
+ERROR: [VRFC 10-3423] illegal output port connection to 'O' [/home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/restored_netlist.v:1714]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

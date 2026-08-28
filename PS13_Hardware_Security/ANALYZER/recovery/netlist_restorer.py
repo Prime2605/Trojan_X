@@ -71,14 +71,18 @@ class NetlistRestorer:
                                                 return str(arg)
 
                                             arg_str = get_arg_name(port_arg.argname)
-                                            if arg_str in trigger_nets_clean:
-                                                print(f"  [*] Neutralizing trigger net '{arg_str}' on payload '{inst.name}' pin '{port_arg.portname}'")
-                                                port_arg.argname = IntConst("1'b0")
-                                                self.modified = True
-                                            elif port_arg.portname == "t1_trigger" or "trigger" in port_arg.portname.lower():
-                                                print(f"  [*] Neutralizing identified trigger pin '{port_arg.portname}' on payload '{inst.name}'")
-                                                port_arg.argname = IntConst("1'b0")
-                                                self.modified = True
+                                            # Do not neutralize output pins
+                                            is_output = port_arg.portname.upper() in {"O", "Q", "Y", "O0", "O1", "O2", "O3", "O4", "O5", "O6"}
+                                            
+                                            if not is_output:
+                                                if arg_str in trigger_nets_clean:
+                                                    print(f"  [*] Neutralizing trigger net '{arg_str}' on payload '{inst.name}' pin '{port_arg.portname}'")
+                                                    port_arg.argname = IntConst("1'b0")
+                                                    self.modified = True
+                                                elif port_arg.portname == "t1_trigger" or "trigger" in port_arg.portname.lower():
+                                                    print(f"  [*] Neutralizing identified trigger pin '{port_arg.portname}' on payload '{inst.name}'")
+                                                    port_arg.argname = IntConst("1'b0")
+                                                    self.modified = True
                                                 
                                 # 2. Optional: we could completely remove trigger cells here,
                                 # but zeroing the payload is safer for ensuring synthesis just optimizes them out.

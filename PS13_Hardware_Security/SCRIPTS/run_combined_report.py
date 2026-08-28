@@ -58,7 +58,7 @@ def main():
     parser.add_argument("--netlist", required=True, help="Gate-level Verilog netlist")
     parser.add_argument("--reference", required=True, help="Clean timing report (.rpt)")
     parser.add_argument("--suspect", required=True, help="Trojan timing report (.rpt)")
-    parser.add_argument("--threshold", type=float, default=0.45, help="Detection threshold")
+    parser.add_argument("--threshold", type=float, default=0.40, help="Detection threshold")
     parser.add_argument("--design-name", default="ALU8", help="Design name")
     args = parser.parse_args()
 

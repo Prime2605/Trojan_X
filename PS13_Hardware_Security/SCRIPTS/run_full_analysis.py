@@ -125,7 +125,7 @@ def main():
                         help="Path to the gate-level Verilog netlist")
     parser.add_argument("--design-name", default="ALU8",
                         help="Name of the design (for report)")
-    parser.add_argument("--threshold", type=float, default=0.45,
+    parser.add_argument("--threshold", type=float, default=0.40,
                         help="Detection threshold (0.0-1.0)")
     parser.add_argument("--output-dir", default=None,
                         help="Output directory for all results")

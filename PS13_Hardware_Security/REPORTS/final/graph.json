@@ -1,11 +1,11 @@
 {
   "summary": {
     "total_nodes": 188,
-    "total_edges": 187,
+    "total_edges": 381,
     "cell_count": 167,
     "port_count": 21,
-    "max_logic_depth": 5,
-    "connected_components": 100,
+    "max_logic_depth": 7,
+    "connected_components": 33,
     "is_dag": true
   },
   "nodes": [
@@ -1013,9 +1013,44 @@
       "net": "SW_IBUF"
     },
     {
+      "source": "PORT_SW_IBUF",
+      "target": "\\LED_OBUF[3]_inst_i_5",
+      "net": "SW_IBUF"
+    },
+    {
+      "source": "PORT_SW_IBUF",
+      "target": "\\LED_OBUF[7]_inst_i_4",
+      "net": "SW_IBUF"
+    },
+    {
+      "source": "PORT_SW_IBUF",
+      "target": "\\alu_y0_inferred__5/i__carry",
+      "net": "SW_IBUF"
+    },
+    {
+      "source": "PORT_SW_IBUF",
+      "target": "\\alu_y0_inferred__5/i__carry__0",
+      "net": "SW_IBUF"
+    },
+    {
       "source": "PORT_digit_select",
       "target": "u_alu",
       "net": "digit_select"
+    },
+    {
+      "source": "\\AN_OBUF[0]_inst_i_1",
+      "target": "\\AN_OBUF[0]_inst",
+      "net": "AN_OBUF[0]"
+    },
+    {
+      "source": "\\AN_OBUF[1]_inst_i_1",
+      "target": "\\AN_OBUF[1]_inst",
+      "net": "AN_OBUF[1]"
+    },
+    {
+      "source": "\\AN_OBUF[2]_inst_i_1",
+      "target": "\\AN_OBUF[2]_inst",
+      "net": "AN_OBUF[2]"
     },
     {
       "source": "BTNC_IBUF_inst",
@@ -1563,6 +1598,576 @@
       "net": "DP"
     },
     {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[0]_inst_i_1",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[0]_inst_i_3",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_3",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[1]_inst_i_3",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_2",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_2",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_9",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_3",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_5",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_6",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[0]_inst",
+      "target": "i__carry_i_4",
+      "net": "SW_IBUF[0]"
+    },
+    {
+      "source": "\\SW_IBUF[10]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_3",
+      "net": "SW_IBUF[10]"
+    },
+    {
+      "source": "\\SW_IBUF[10]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_4",
+      "net": "SW_IBUF[10]"
+    },
+    {
+      "source": "\\SW_IBUF[10]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_7",
+      "net": "SW_IBUF[10]"
+    },
+    {
+      "source": "\\SW_IBUF[10]_inst",
+      "target": "i__carry_i_2",
+      "net": "SW_IBUF[10]"
+    },
+    {
+      "source": "\\SW_IBUF[11]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_3",
+      "net": "SW_IBUF[11]"
+    },
+    {
+      "source": "\\SW_IBUF[11]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_4",
+      "net": "SW_IBUF[11]"
+    },
+    {
+      "source": "\\SW_IBUF[11]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_6",
+      "net": "SW_IBUF[11]"
+    },
+    {
+      "source": "\\SW_IBUF[11]_inst",
+      "target": "i__carry_i_1",
+      "net": "SW_IBUF[11]"
+    },
+    {
+      "source": "\\SW_IBUF[12]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_4",
+      "net": "SW_IBUF[12]"
+    },
+    {
+      "source": "\\SW_IBUF[12]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_5",
+      "net": "SW_IBUF[12]"
+    },
+    {
+      "source": "\\SW_IBUF[12]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_9",
+      "net": "SW_IBUF[12]"
+    },
+    {
+      "source": "\\SW_IBUF[12]_inst",
+      "target": "i__carry__0_i_4",
+      "net": "SW_IBUF[12]"
+    },
+    {
+      "source": "\\SW_IBUF[13]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_3",
+      "net": "SW_IBUF[13]"
+    },
+    {
+      "source": "\\SW_IBUF[13]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_4",
+      "net": "SW_IBUF[13]"
+    },
+    {
+      "source": "\\SW_IBUF[13]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_8",
+      "net": "SW_IBUF[13]"
+    },
+    {
+      "source": "\\SW_IBUF[13]_inst",
+      "target": "i__carry__0_i_3",
+      "net": "SW_IBUF[13]"
+    },
+    {
+      "source": "\\SW_IBUF[14]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_4",
+      "net": "SW_IBUF[14]"
+    },
+    {
+      "source": "\\SW_IBUF[14]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_5",
+      "net": "SW_IBUF[14]"
+    },
+    {
+      "source": "\\SW_IBUF[14]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_7",
+      "net": "SW_IBUF[14]"
+    },
+    {
+      "source": "\\SW_IBUF[14]_inst",
+      "target": "i__carry__0_i_2",
+      "net": "SW_IBUF[14]"
+    },
+    {
+      "source": "\\SW_IBUF[15]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_6",
+      "net": "SW_IBUF[15]"
+    },
+    {
+      "source": "\\SW_IBUF[15]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_2",
+      "net": "SW_IBUF[15]"
+    },
+    {
+      "source": "\\SW_IBUF[15]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_3",
+      "net": "SW_IBUF[15]"
+    },
+    {
+      "source": "\\SW_IBUF[15]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_6",
+      "net": "SW_IBUF[15]"
+    },
+    {
+      "source": "\\SW_IBUF[15]_inst",
+      "target": "i__carry__0_i_1",
+      "net": "SW_IBUF[15]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_3",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[1]_inst_i_1",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[1]_inst_i_2",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[1]_inst_i_3",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_2",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_2",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_8",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_3",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_5",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_6",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[1]_inst",
+      "target": "i__carry_i_3",
+      "net": "SW_IBUF[1]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_3",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_1",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_2",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_3",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[2]_inst_i_4",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_2",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_7",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_3",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_5",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_6",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[2]_inst",
+      "target": "i__carry_i_2",
+      "net": "SW_IBUF[2]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_3",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_1",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_2",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_3",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_4",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_6",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_3",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_5",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_6",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[3]_inst",
+      "target": "i__carry_i_1",
+      "net": "SW_IBUF[3]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_3",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_2",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_3",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_4",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[4]_inst_i_5",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_5",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_6",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_9",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[4]_inst",
+      "target": "i__carry__0_i_4",
+      "net": "SW_IBUF[4]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_3",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_1",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_2",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_3",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[5]_inst_i_4",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_6",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_8",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[5]_inst",
+      "target": "i__carry__0_i_3",
+      "net": "SW_IBUF[5]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[13]_inst_i_3",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_1",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_5",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_1",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_3",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_4",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[6]_inst_i_5",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_5",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_7",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[6]_inst",
+      "target": "i__carry__0_i_2",
+      "net": "SW_IBUF[6]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[13]_inst_i_3",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_1",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_2",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_5",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[15]_inst_i_6",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_1",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_2",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_3",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_5",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "\\LED_OBUF[7]_inst_i_6",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[7]_inst",
+      "target": "i__carry__0_i_1",
+      "net": "SW_IBUF[7]"
+    },
+    {
+      "source": "\\SW_IBUF[8]_inst",
+      "target": "\\LED_OBUF[0]_inst_i_2",
+      "net": "SW_IBUF[8]"
+    },
+    {
+      "source": "\\SW_IBUF[8]_inst",
+      "target": "\\LED_OBUF[0]_inst_i_3",
+      "net": "SW_IBUF[8]"
+    },
+    {
+      "source": "\\SW_IBUF[8]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_9",
+      "net": "SW_IBUF[8]"
+    },
+    {
+      "source": "\\SW_IBUF[8]_inst",
+      "target": "i__carry_i_4",
+      "net": "SW_IBUF[8]"
+    },
+    {
+      "source": "\\SW_IBUF[9]_inst",
+      "target": "\\LED_OBUF[1]_inst_i_2",
+      "net": "SW_IBUF[9]"
+    },
+    {
+      "source": "\\SW_IBUF[9]_inst",
+      "target": "\\LED_OBUF[1]_inst_i_3",
+      "net": "SW_IBUF[9]"
+    },
+    {
+      "source": "\\SW_IBUF[9]_inst",
+      "target": "\\LED_OBUF[3]_inst_i_8",
+      "net": "SW_IBUF[9]"
+    },
+    {
+      "source": "\\SW_IBUF[9]_inst",
+      "target": "i__carry_i_3",
+      "net": "SW_IBUF[9]"
+    },
+    {
       "source": "\\refresh_counter[0]_i_2",
       "target": "\\refresh_counter_reg[0]",
       "net": "\\refresh_counter[0]_i_2_n_0"
@@ -1668,6 +2273,91 @@
       "net": "\\refresh_counter_reg_n_0_[0]"
     },
     {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\AN_OBUF[0]_inst_i_1",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\AN_OBUF[1]_inst_i_1",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\AN_OBUF[2]_inst_i_1",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\SEG_OBUF[6]_inst_i_2",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\SEG_OBUF[6]_inst_i_3",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\SEG_OBUF[6]_inst_i_4",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[18]",
+      "target": "\\SEG_OBUF[6]_inst_i_5",
+      "net": "digit_select[0]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\AN_OBUF[0]_inst_i_1",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\AN_OBUF[1]_inst_i_1",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\AN_OBUF[2]_inst_i_1",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\SEG_OBUF[6]_inst_i_2",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\SEG_OBUF[6]_inst_i_3",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\SEG_OBUF[6]_inst_i_4",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\refresh_counter_reg[19]",
+      "target": "\\SEG_OBUF[6]_inst_i_5",
+      "net": "digit_select[1]"
+    },
+    {
+      "source": "\\LED_OBUF[0]_inst_i_1",
+      "target": "\\LED_OBUF[0]_inst",
+      "net": "LED_OBUF[0]"
+    },
+    {
+      "source": "\\LED_OBUF[0]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_2",
+      "net": "LED_OBUF[0]"
+    },
+    {
+      "source": "\\LED_OBUF[0]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_3",
+      "net": "LED_OBUF[0]"
+    },
+    {
       "source": "\\LED_OBUF[0]_inst_i_2",
       "target": "\\LED_OBUF[0]_inst_i_1",
       "net": "\\LED_OBUF[0]_inst_i_2_n_0"
@@ -1758,6 +2448,21 @@
       "net": "\\LED_OBUF[15]_inst_i_6_n_0"
     },
     {
+      "source": "\\LED_OBUF[1]_inst_i_1",
+      "target": "\\LED_OBUF[1]_inst",
+      "net": "LED_OBUF[1]"
+    },
+    {
+      "source": "\\LED_OBUF[1]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_2",
+      "net": "LED_OBUF[1]"
+    },
+    {
+      "source": "\\LED_OBUF[1]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_2",
+      "net": "LED_OBUF[1]"
+    },
+    {
       "source": "\\LED_OBUF[1]_inst_i_2",
       "target": "\\LED_OBUF[1]_inst_i_1",
       "net": "\\LED_OBUF[1]_inst_i_2_n_0"
@@ -1766,6 +2471,21 @@
       "source": "\\LED_OBUF[1]_inst_i_3",
       "target": "\\LED_OBUF[1]_inst_i_1",
       "net": "\\LED_OBUF[1]_inst_i_3_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[2]_inst_i_1",
+      "target": "\\LED_OBUF[2]_inst",
+      "net": "LED_OBUF[2]"
+    },
+    {
+      "source": "\\LED_OBUF[2]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_2",
+      "net": "LED_OBUF[2]"
+    },
+    {
+      "source": "\\LED_OBUF[2]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_5",
+      "net": "LED_OBUF[2]"
     },
     {
       "source": "\\LED_OBUF[2]_inst_i_2",
@@ -1783,6 +2503,21 @@
       "net": "\\LED_OBUF[2]_inst_i_4_n_0"
     },
     {
+      "source": "\\LED_OBUF[3]_inst_i_1",
+      "target": "\\LED_OBUF[3]_inst",
+      "net": "LED_OBUF[3]"
+    },
+    {
+      "source": "\\LED_OBUF[3]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_2",
+      "net": "LED_OBUF[3]"
+    },
+    {
+      "source": "\\LED_OBUF[3]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_4",
+      "net": "LED_OBUF[3]"
+    },
+    {
       "source": "\\LED_OBUF[3]_inst_i_2",
       "target": "\\LED_OBUF[3]_inst_i_1",
       "net": "\\LED_OBUF[3]_inst_i_2_n_0"
@@ -1796,6 +2531,21 @@
       "source": "\\LED_OBUF[3]_inst_i_4",
       "target": "\\LED_OBUF[3]_inst_i_1",
       "net": "\\LED_OBUF[3]_inst_i_4_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_1",
+      "target": "\\LED_OBUF[4]_inst",
+      "net": "LED_OBUF[4]"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_2",
+      "net": "LED_OBUF[4]"
+    },
+    {
+      "source": "\\LED_OBUF[4]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_3",
+      "net": "LED_OBUF[4]"
     },
     {
       "source": "\\LED_OBUF[4]_inst_i_2",
@@ -1818,6 +2568,21 @@
       "net": "\\LED_OBUF[4]_inst_i_5_n_0"
     },
     {
+      "source": "\\LED_OBUF[5]_inst_i_1",
+      "target": "\\LED_OBUF[5]_inst",
+      "net": "LED_OBUF[5]"
+    },
+    {
+      "source": "\\LED_OBUF[5]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_2",
+      "net": "LED_OBUF[5]"
+    },
+    {
+      "source": "\\LED_OBUF[5]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_2",
+      "net": "LED_OBUF[5]"
+    },
+    {
       "source": "\\LED_OBUF[5]_inst_i_2",
       "target": "\\LED_OBUF[5]_inst_i_1",
       "net": "\\LED_OBUF[5]_inst_i_2_n_0"
@@ -1836,6 +2601,21 @@
       "source": "\\LED_OBUF[5]_inst_i_5",
       "target": "\\LED_OBUF[5]_inst_i_2",
       "net": "\\LED_OBUF[5]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_1",
+      "target": "\\LED_OBUF[6]_inst",
+      "net": "LED_OBUF[6]"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_1",
+      "net": "LED_OBUF[6]"
+    },
+    {
+      "source": "\\LED_OBUF[6]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_5",
+      "net": "LED_OBUF[6]"
     },
     {
       "source": "\\LED_OBUF[6]_inst_i_2",
@@ -1893,6 +2673,21 @@
       "net": "\\LED_OBUF[6]_inst_i_6_n_0"
     },
     {
+      "source": "\\LED_OBUF[7]_inst_i_1",
+      "target": "\\LED_OBUF[7]_inst",
+      "net": "LED_OBUF[7]"
+    },
+    {
+      "source": "\\LED_OBUF[7]_inst_i_1",
+      "target": "\\LED_OBUF[14]_inst_i_1",
+      "net": "LED_OBUF[7]"
+    },
+    {
+      "source": "\\LED_OBUF[7]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst_i_4",
+      "net": "LED_OBUF[7]"
+    },
+    {
       "source": "\\LED_OBUF[7]_inst_i_2",
       "target": "\\LED_OBUF[7]_inst_i_1",
       "net": "\\LED_OBUF[7]_inst_i_2_n_0"
@@ -1906,6 +2701,181 @@
       "source": "\\LED_OBUF[7]_inst_i_5",
       "target": "\\LED_OBUF[7]_inst_i_3",
       "net": "\\LED_OBUF[7]_inst_i_5_n_0"
+    },
+    {
+      "source": "\\SEG_OBUF[0]_inst_i_1",
+      "target": "\\SEG_OBUF[0]_inst",
+      "net": "SEG_OBUF[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[1]_inst_i_1",
+      "target": "\\SEG_OBUF[1]_inst",
+      "net": "SEG_OBUF[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[2]_inst_i_1",
+      "target": "\\SEG_OBUF[2]_inst",
+      "net": "SEG_OBUF[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[3]_inst_i_1",
+      "target": "\\SEG_OBUF[3]_inst",
+      "net": "SEG_OBUF[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[4]_inst_i_1",
+      "target": "\\SEG_OBUF[4]_inst",
+      "net": "SEG_OBUF[4]"
+    },
+    {
+      "source": "\\SEG_OBUF[5]_inst_i_1",
+      "target": "\\SEG_OBUF[5]_inst",
+      "net": "SEG_OBUF[5]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_1",
+      "target": "\\SEG_OBUF[6]_inst",
+      "net": "SEG_OBUF[6]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[0]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[1]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[2]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[3]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[4]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[5]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_2",
+      "target": "\\SEG_OBUF[6]_inst_i_1",
+      "net": "hex_digit[1]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[0]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[1]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[2]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[3]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[4]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[5]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_3",
+      "target": "\\SEG_OBUF[6]_inst_i_1",
+      "net": "hex_digit[0]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[0]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[1]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[2]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[3]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[4]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[5]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_4",
+      "target": "\\SEG_OBUF[6]_inst_i_1",
+      "net": "hex_digit[3]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[0]_inst_i_1",
+      "net": "hex_digit[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[1]_inst_i_1",
+      "net": "hex_digit[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[2]_inst_i_1",
+      "net": "hex_digit[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[3]_inst_i_1",
+      "net": "hex_digit[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[4]_inst_i_1",
+      "net": "hex_digit[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[5]_inst_i_1",
+      "net": "hex_digit[2]"
+    },
+    {
+      "source": "\\SEG_OBUF[6]_inst_i_5",
+      "target": "\\SEG_OBUF[6]_inst_i_1",
+      "net": "hex_digit[2]"
     }
   ]
 }

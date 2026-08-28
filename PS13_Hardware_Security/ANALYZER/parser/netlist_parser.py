@@ -134,9 +134,18 @@ class NetlistParser:
                                 if inst.portlist:
                                     for port_arg in inst.portlist:
                                         port_name = port_arg.portname
+                                        def get_arg_name(arg):
+                                            if hasattr(arg, 'name'):
+                                                return arg.name
+                                            elif hasattr(arg, 'var') and hasattr(arg.var, 'name'):
+                                                # For Pointer, e.g., var[0]
+                                                ptr = f"{arg.var.name}[{arg.ptr}]" if hasattr(arg, 'ptr') else arg.var.name
+                                                return ptr
+                                            return str(arg)
+
                                         # Store connection as string repr
                                         inst_info["connections"][port_name] = \
-                                            str(port_arg.argname) if port_arg.argname else None
+                                            get_arg_name(port_arg.argname) if port_arg.argname else None
 
                                 module_info["instances"].append(inst_info)
                                 self.instances.append(inst_info)

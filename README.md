@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🔐 TROJAN_X
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:ff4444&height=220&section=header&text=🔐%20TROJAN_X&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Hardware%20Trojan%20Detection%20%26%20Side-Channel%20Analysis&descSize=18&descAlignY=55&descColor=cccccc" width="100%"/>
 
-### Hardware Trojan Detection & Side-Channel Analysis Platform
+<br>
 
 [![Vivado](https://img.shields.io/badge/Vivado-2025.1-FF6F00?style=for-the-badge&logo=amd&logoColor=white)](https://www.xilinx.com/products/design-tools/vivado.html)
 [![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -16,22 +16,23 @@
 
 <br>
 
+<table>
+<tr>
+<td>
+
 ```
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║          ████████╗██████╗  ██████╗      ██╗ █████╗ ███╗  ██╗ ║
-║          ╚══██╔══╝██╔══██╗██╔═══██╗     ██║██╔══██╗████╗ ██║ ║
-║             ██║   ██████╔╝██║   ██║     ██║███████║██╔██╗██║ ║
-║             ██║   ██╔══██╗██║   ██║██   ██║██╔══██║██║╚████║ ║
-║             ██║   ██║  ██║╚██████╔╝╚█████╔╝██║  ██║██║ ╚███║ ║
-║             ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ║
-║                     ═══  X  ═══                              ║
-║           Hardware Security Research Platform                ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
+  ████████╗██████╗  ██████╗      ██╗ █████╗ ███╗  ██╗     ██╗  ██╗
+  ╚══██╔══╝██╔══██╗██╔═══██╗     ██║██╔══██╗████╗ ██║     ╚██╗██╔╝
+     ██║   ██████╔╝██║   ██║     ██║███████║██╔██╗██║      ╚███╔╝
+     ██║   ██╔══██╗██║   ██║██   ██║██╔══██║██║╚████║      ██╔██╗
+     ██║   ██║  ██║╚██████╔╝╚█████╔╝██║  ██║██║ ╚███║     ██╔╝ ██╗
+     ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚══╝    ╚═╝  ╚═╝
+            ⚡ Hardware Security Research Platform ⚡
 ```
 
-<br>
+</td>
+</tr>
+</table>
 
 > *"The most dangerous hardware trojans are the ones you can't see — until it's too late."*
 

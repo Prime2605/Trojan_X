@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-// Date        : Fri Aug 28 17:25:38 2026
+// Date        : Fri Aug 28 23:08:19 2026
 // Host        : prime-ThinkBook running 64-bit Ubuntu 26.04 LTS
 // Command     : write_verilog -force /home/prime/Trojan_X/PS13_Hardware_Security/NETLISTS/T1/alu8_T1_netlist.v
 // Design      : alu8_top

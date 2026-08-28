@@ -1,18 +1,18 @@
 {
   "metadata": {
     "design": "ALU8",
-    "generated_at": "2026-08-28T22:45:57.469932",
+    "generated_at": "2026-08-28T23:09:06.519190",
     "framework": "PS13 Hardware Security Analyzer",
     "version": "0.1.0"
   },
   "overall_verdict": {
-    "verdict": "SUSPICIOUS \u2014 structural anomalies detected",
-    "risk_level": "MEDIUM"
+    "verdict": "CLEAN \u2014 no anomalies detected",
+    "risk_level": "NONE"
   },
   "structural_summary": {
     "total_cells": 167,
-    "total_edges": 187,
-    "max_logic_depth": 5,
+    "total_edges": 381,
+    "max_logic_depth": 7,
     "cell_type_distribution": {
       "OBUF": 32,
       "LUT2": 22,
@@ -31,71 +31,9 @@
     }
   },
   "trojan_summary": {
-    "suspicious_cells_found": 10,
-    "top_suspects": [
-      {
-        "cell": "\\LED_OBUF[3]_inst_i_1",
-        "score": 0.5072,
-        "type": "LUT6"
-      },
-      {
-        "cell": "\\LED_OBUF[5]_inst_i_1",
-        "score": 0.5072,
-        "type": "LUT6"
-      },
-      {
-        "cell": "\\LED_OBUF[4]_inst_i_1",
-        "score": 0.4972,
-        "type": "LUT6"
-      },
-      {
-        "cell": "u_alu",
-        "score": 0.4853,
-        "type": "trojan_alu8"
-      },
-      {
-        "cell": "\\LED_OBUF[13]_inst_i_1",
-        "score": 0.4828,
-        "type": "LUT3"
-      },
-      {
-        "cell": "\\LED_OBUF[6]_inst_i_1",
-        "score": 0.4824,
-        "type": "LUT6"
-      },
-      {
-        "cell": "\\LED_OBUF[7]_inst_i_1",
-        "score": 0.4824,
-        "type": "LUT6"
-      },
-      {
-        "cell": "\\LED_OBUF[2]_inst_i_1",
-        "score": 0.4707,
-        "type": "LUT6"
-      },
-      {
-        "cell": "\\LED_OBUF[13]_inst_i_2",
-        "score": 0.4688,
-        "type": "LUT6"
-      },
-      {
-        "cell": "\\LED_OBUF[0]_inst_i_1",
-        "score": 0.4585,
-        "type": "LUT6"
-      }
-    ],
-    "trojan_type_estimates": [
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (moderate trigger)",
-      "combinational (simple trigger)",
-      "combinational (moderate trigger)"
-    ],
+    "suspicious_cells_found": 0,
+    "top_suspects": [],
+    "trojan_type_estimates": [],
     "affected_outputs": []
   },
   "timing_summary": null,
@@ -105,8 +43,7 @@
     "timing_sca": "not_run"
   },
   "recommendations": [
-    "Review structural anomalies in detail",
-    "Run timing analysis if not already done",
-    "Compare against clean reference netlist"
+    "Design appears clean \u2014 no immediate action required",
+    "Consider periodic re-analysis if design evolves"
   ]
 }

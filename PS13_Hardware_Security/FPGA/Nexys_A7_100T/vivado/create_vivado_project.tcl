@@ -41,12 +41,23 @@ set_property top alu8_top [current_fileset]
 # Add constraints
 add_files -fileset constrs_1 -norecurse "$xdc_dir/nexys_a7_100t.xdc"
 
-# Add simulation sources
+# Add primary simulation sources
 add_files -fileset sim_1 -norecurse "$tb_dir/tb_alu8.v"
 set_property top tb_alu8 [get_filesets sim_1]
 
 # Set simulation properties
 set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+
+# Add recovery simulation set (sim_recovery)
+create_fileset -simset sim_recovery
+add_files -fileset sim_recovery -norecurse "$tb_dir/tb_recovery.v"
+# Try to add the restored netlist if it exists
+set restored_net [file normalize "$project_dir/../../../NETLISTS/T1/restored_netlist.v"]
+if {[file exists $restored_net]} {
+    add_files -fileset sim_recovery -norecurse $restored_net
+}
+set_property top tb_recovery [get_filesets sim_recovery]
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_recovery]
 
 # Update compile order
 update_compile_order -fileset sources_1

@@ -16,11 +16,7 @@
 
 <br>
 
-<table>
-<tr>
-<td>
-
-```
+<pre align="center">
   ████████╗██████╗  ██████╗      ██╗ █████╗ ███╗  ██╗     ██╗  ██╗
   ╚══██╔══╝██╔══██╗██╔═══██╗     ██║██╔══██╗████╗ ██║     ╚██╗██╔╝
      ██║   ██████╔╝██║   ██║     ██║███████║██╔██╗██║      ╚███╔╝
@@ -28,11 +24,7 @@
      ██║   ██║  ██║╚██████╔╝╚█████╔╝██║  ██║██║ ╚███║     ██╔╝ ██╗
      ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚══╝    ╚═╝  ╚═╝
             ⚡ Hardware Security Research Platform ⚡
-```
-
-</td>
-</tr>
-</table>
+</pre>
 
 > *"The most dangerous hardware trojans are the ones you can't see — until it's too late."*
 
